@@ -1,0 +1,36 @@
+body {
+	background-color: #FEF6A1;
+}
+.image:hover{
+	background-color: brown;
+}
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono);
+
+#chart svg {
+  height: 300px;
+}
+
+#chart2 svg {
+  height: 300px;
+}
+
+.nv-label text{
+    font-family: Droid Sans;
+}
+
+table, th, td {
+    border: 3px solid black;
+    font-size: 20px;
+}
+
+th {
+	background-color: brown;
+	color:white;
+}
+
+.acad{
+	background-color: #a85715;
+	color:white;
+	padding-left: 2px;
+	padding-right: 2px;
+}

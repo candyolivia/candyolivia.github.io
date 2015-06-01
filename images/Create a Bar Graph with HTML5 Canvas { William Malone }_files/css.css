@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fjalla One'), local('FjallaOne-Regular'), url(http://fonts.gstatic.com/s/fjallaone/v4/rxxXUYj4oZ6Q5oDJFtEd6vk_vArhqVIZ0nv9q090hN8.woff2) format('woff2'), url(http://fonts.gstatic.com/s/fjallaone/v4/rxxXUYj4oZ6Q5oDJFtEd6hsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Questrial';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Questrial'), local('Questrial-Regular'), url(http://fonts.gstatic.com/s/questrial/v6/MYWJ4lYm5dbZ1UBuYox79FtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/questrial/v6/MYWJ4lYm5dbZ1UBuYox79D8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}

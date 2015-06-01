@@ -1,0 +1,1367 @@
+/* Resets */
+
+* {
+	margin: 0; 
+	padding: 0;
+	background-repeat: no-repeat;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+abbr {
+	border: 0;
+}
+
+nav ul, nav li { 
+	margin: 0; 
+	list-style: none; 
+	list-style-image: none;
+}
+
+ol {
+	margin-left: 20px;
+}
+
+input, dt, textArea {
+	margin: 15px 0;	
+}
+
+img {
+	border: 0;
+	border-style: none;
+}
+
+ul {	
+	list-style-position: inside;
+	list-style-type: none;
+}
+
+/* Background */
+
+html, body {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	min-width: 320px;
+}
+
+html {
+	background-color: #fff;
+	
+	/* Stripe on the background */
+	background-image: url(data:image/gif;base64,R0lGODlhLQABAIAAANxLJQAAACH5BAAAAAAALAAAAAAtAAEAAAIFhI+py10AOw==);
+	background-position: top right;
+	background-repeat: repeat-y;
+}
+
+body {
+	font-family: "Georgia", serif;
+	color: #666;
+	font-size: 14px;
+	line-height: 1.6;
+    font-weight: normal;
+    min-height: 100%;
+}
+
+#page {
+	margin: 0 auto;
+	text-align: left;
+	width: 100%;
+	max-width: 1000px;
+	min-width: 1000px;
+}
+
+/* Default links */
+
+a:link {
+	color: #49a0d8;
+}
+
+a:visited {
+	color: #49a0d8;
+}
+
+a:hover {
+	color: #49a0d8;
+}
+
+a:active {
+	color: #dddddd;
+}
+
+.subtle-link:link {
+	color: #666;
+}
+
+.subtle-link:visited {
+	color: #666;
+}
+
+.subtle-link:active {
+	color: #666;
+}
+
+.subtle-link:hover {
+	color: #49a0d8;
+	text-decoration: underline;
+}
+
+/* Header */
+
+header[role="banner"] {
+	padding-top: 25px;
+}
+
+/* Main navigation */
+
+#nav {
+	margin: 0 auto;
+	width: 530px;
+	height: 44px;
+	margin-bottom: 10px;
+}
+
+.nav-link {
+	text-align: center;
+}
+
+.nav-link a:hover {
+	color: #DC4B25;
+}
+
+.nav-link a {
+	float: left;
+	font-family: "Questrial", "Helvetica", "Arial", sans-serif;
+	font-size: 16px;
+	color: #ADAFB1;
+	padding-top: 12px;
+	letter-spacing: 1.025px;
+	display: block;
+	height: 44px;
+	width: 80px;
+	margin-left: 13px;
+	margin-right: 13px;
+}
+
+.nav-down a {
+	color: #DC4B25;
+}
+
+#nav-down-icon {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 12px 10px 0 10px;
+	border-color: #ecebec transparent transparent transparent;
+
+	position: absolute;
+	visibility: hidden;
+	margin-top: 0px;
+	margin-bottom: -12px;
+	pointer-events: none;
+}
+
+#nav-over-icon {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 24px 28px 24px;
+	border-color: transparent transparent #ffffff transparent;
+	visibility: hidden;
+	position: absolute;
+	margin-bottom: -15px;
+	-webkit-transition: 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	pointer-events: none;
+}
+
+/* Content */
+
+#content-wrapper {
+	margin: 0 20px 20px 20px;
+	padding: 35px 0 20px 0;
+	background-color: #fff;
+	border-radius: 4px;
+	-moz-box-shadow: 0px 0px 15px 0px rgba(230, 230, 230, 0.75);
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(230, 230, 230, 0.75);
+	box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.1);
+}
+
+#content {
+	padding-bottom: 20px;
+	margin: 0 4%;
+	margin-left: 215px;
+	margin-right: 215px;
+	-webkit-transition: margin-right 0.25s linear;
+	-webkit-transition: margin-left 0.25s linear;
+}
+
+p {
+	margin: 4% 0;
+}
+
+/* Content headers */
+
+h1 {
+	text-align: center;
+	font-size: 32px;
+	margin: 0 0 2% 0;
+	font-family: "Fjalla One", "Arial Narrow", sans-serif;
+	font-weight: normal;
+	letter-spacing: -0.0325em;
+	text-transform: uppercase;
+	color: #DC4B25;
+}
+
+h2 {
+	margin: 4% 0;
+	font-size: 18px;
+	color: #444;
+	font-family: "Fjalla One", "Arial Narrow", sans-serif;
+    font-weight: normal;
+}
+
+h2 a:link, h2 a:visited {
+	color: #444;
+}
+
+h2 a:hover, h2 a:active {
+	color: #49a0d8;
+}
+
+h3 {
+	font-size: 16px;
+	color: #557755;
+	font-family: "Fjalla One", "Arial Narrow", sans-serif;
+    font-weight: bold;
+}
+
+.subtitle {
+	text-align: center;
+	border-bottom: 1px solid #CCC;
+	margin: 4% 0 0 0;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+
+.subtitle-standalone {
+	text-align: left;
+}
+
+/* Entries */
+
+.entry-container {
+	margin-bottom: 20px;
+}
+
+.entry-container article {
+	overflow: hidden; 
+	_overflow: visible; 
+	zoom: 1;
+}
+
+.entry-spotlight {
+	display: block;
+	margin: 0 25%;
+	padding-top: 2px;
+	font-family: "Fjalla One", "Arial Narrow", sans-serif;
+	font-family: "Questrial", "Helvetica", "Arial", sans-serif;
+	color: #fff;
+	font-size: 15px;
+	width: 50%;
+	height: 20px;
+	text-align: center;
+	padding: 0 0 3px 0;
+	width: 100%;
+	margin: 0;
+}
+
+entry-spotlight-bottom {
+	display: block;
+	margin: 0 25%;
+	width: 50%;
+	height: 8px;
+	-moz-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	-moz-border-bottom-right-radius: 4px;
+	-webkit-border-bottom-tight-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.entry-spotlight-new {
+	background-color: #ffc538;
+}
+
+.entry-container .entry-new {
+	border: 2px solid #ffc538;
+}
+
+.entry-spotlight-trending {
+	background-color: #49a0d8;
+}
+
+.entry-container .entry-trending {
+	border: 2px solid #49a0d8;
+}
+
+.entry-spotlight-popular {
+	background-color: #DC4B25;
+}
+
+.entry-container .entry-popular {
+	border: 2px solid #DC4B25;
+}
+
+.entry-title {
+	font-weight: normal;
+	margin-bottom: 0;
+	margin: 4% 4% 0 4%;
+}
+
+.entry-description {
+	color: #666;
+	margin: 0 4%;
+}
+
+.entry-icon {
+	float: right;
+}
+
+.entry-footer {
+	font-family: "Questrial", "Helvetica", "Arial", sans-serif;
+	border-top: 1px solid #ddd;
+}
+
+.entry-type {
+	padding: 2px 0;
+	padding-left: 4%;
+	text-align: left;
+	color: #999;
+	width: 29%;
+	float: left;
+}
+
+.entry-share {
+	float: left;
+	padding: 2px 0;
+	text-align: center;
+	width: 34%;
+}
+
+.entry-link {
+	float: left;
+	padding: 2px 0;
+	padding-right: 4%;
+	text-align: right;
+	width: 29%;
+}
+
+.entry-link:hover {
+	text-decoration: underline;
+}
+
+.post-icon-container {
+	box-sizing: border-box;
+	padding: 25px 35px;
+	font-size: 32px;
+	min-width: 100px;
+	height: 100%;
+}
+
+.brief-icon-container {
+	box-sizing: border-box;
+	padding: 20px 35px 0 35px;
+	font-size: 32px;
+	min-width: 100px;
+	height: 100%;
+}
+
+a:visited .entry-icon, a:link .entry-icon {
+	color: #ddd;
+}
+
+a:hover .entry-icon {
+	color: #49a0d8;
+}
+
+/* Aside */
+
+#aside {
+	position: relative;
+	float: left;
+	width: 215px;
+	padding: 0;
+	font-size: 10px;
+}
+
+#william-malone-logo {
+	display: block;
+	margin: 0 0 40px 10%;
+	background-position: center;
+	background-image: url(http://seed1.watermelonduck.com/william-malone-logo-2x.png);
+	width: 238px;
+	height: 28px;
+	transition: margin-bottom 0.25s linear;
+	-webkit-transition: margin-bottom 0.25s linear;
+	-moz-transition: margin-bottom 0.25s linear;
+	-ms-transition: margin-bottom 0.25s linear;
+	background-size: 100%;
+}
+
+/* Social media icons */
+
+.brand-circle {
+	width: 100%;
+	height: 35px;
+	text-align: center;
+}
+
+.brand-circle-icon {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color: #49a0d8;
+	font-size: 24px;
+	color: #fff;
+	padding: 2px;
+	border-radius: 50%;
+}
+
+.brand-circle-icon:hover {
+	background-color: #fff;
+	color: #49a0d8;
+}
+
+.brand-circle-icon a {
+	color: #fff;
+}
+
+#follow-me-on-twitter {
+	position: absolute;
+	display: inline-block;
+	top: 0px;
+	left: 840px;
+	width: 35px;
+	height: 35px;
+	text-align: right;
+	vertical-align: middle;
+	-webkit-transition: 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#follow-me-on-twitter-icon {
+	display: block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color: #49a0d8;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	padding: 2px;
+	border-radius: 4px;
+	-webkit-transition: 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#follow-me-on-twitter-icon:hover {
+	background-color: #fff;
+	color: #49a0d8;
+}
+
+#follow-me-on-twitter-icon a {
+	color: #fff;
+}
+
+#add-me-to-google-plus {
+	position: absolute;
+	top: 0px;
+	left: 890px;
+	width: 35px;
+	height: 35px;
+	text-align: right;
+	vertical-align: middle;
+	-webkit-transition: 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#add-me-to-google-plus-icon {
+	display: block;
+	font-size: 24px;
+	background-color: #DC4B25;
+	color: #fff;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 4px;
+	padding: 2px;
+	-webkit-transition: 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#add-me-to-google-plus-icon:hover {
+	background-color: #fff;
+	color: #DC4B25;
+}
+
+#add-me-to-google-plus-icon a {
+	color: #fff;
+}
+
+/* Footer */
+
+footer {
+	text-align: center;
+}
+
+.footer-text-link {
+	border-right: 1px #ccc solid;
+	padding-right: 5px;
+}
+
+.footer-text-link:last-child {
+	border-right: none;
+}
+
+#footer-icon-nav {
+	margin: 0px auto; 
+	margin-bottom: 30px;
+	width: 300px;
+	height: 35px;
+	text-align: center;
+}
+
+.footer-icon {
+	float: left;
+	width: 16.66666%;
+}
+
+.footerIcon:hover {
+	color: #fff;
+}
+
+.footerIcon {
+	background-color: #ccc;
+	border-radius: 4px;
+}
+
+/* Social media icon backgrounds */
+
+#twitter:hover {
+	background-color: #55acee;
+}
+
+#linkedIn:hover {
+	background-color: #1b86bc;
+}
+
+#flickr:hover {
+	background-color: #ff0080;
+}
+
+#github:hover {
+	background-color: #222;
+}
+
+#googlePlus:hover {
+	background-color: #dc4b38;
+}
+
+#rss:hover {
+	background-color: #ff9900;
+}
+
+/* Footer text navigation */
+
+#footer-text-nav {
+	margin:0 0 10px 0;
+	padding:0;
+	font-size:10px;
+	color: #999;
+	text-align:center;
+	display:block;
+}
+
+#footer-text-nav a {
+	font-family: "Helvetica", "Arial", sans-serif;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#copyright {
+	font-family: "Helvetica", "Arial", sans-serif;
+	color: #999;
+	margin: 20px 50px 0 50px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 9px;	
+	display: block;
+}
+
+/* Misc */
+
+.bubble {
+	border: solid 1px #ddd;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: 0px 1px 5px #ccc;
+	-webkit-box-shadow: 0px 1px 5px #ccc;
+	box-shadow: 0px 1px 5px #ccc;
+}
+
+.standard-list {
+	list-style: inherit;
+	list-style-position: inside;
+	margin-left: 8%;
+}
+
+/**
+* Works
+*/
+
+.collection {
+	font-size: 12px;
+	color:
+}
+
+.collection ul {
+	text-align: left;
+	list-style-type: disc;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+
+.collection p {
+	margin: 0 0 10px 0;
+	text-align:left;
+}
+
+.collection img {
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+.work-title {
+	margin: 30px 0 10px 0;
+}
+
+/**
+* Home
+*/
+
+#more-articles {
+	color: #49a0d8;
+	margin-top: 45px;
+	text-align: center;
+	font-family: "Questrial", "Helvetica", "Arial", sans-serif;
+	font-size: 16px;
+}
+
+#more-articles a {
+	color: #49a0d8;
+}
+
+/**
+* Resume
+*/
+
+.resume-section {
+	overflow: hidden;
+}
+
+#resume-content {
+	color: #000;
+	font-weight: normal;
+	list-style: disc;
+}
+
+.resume-sub-header {
+	color: #000;
+}
+
+.resume-sub-section {
+	margin-top: 30px;
+}
+
+.resume-sub-section header {
+	overflow: hidden;
+}
+
+.resume-body {
+	margin-left: 4%;
+}
+
+.resume-bullet {
+	list-style:disc;
+	margin: 15px 0 15px 40px;
+}
+
+.adobe-certification-image {
+	margin-bottom: 15px;
+}
+
+.resume-bullet {
+	margin-left: 0;
+}
+
+.resume-sub-section {
+	margin-bottom: 30px;
+}
+	
+.compact-list {
+	margin-left: 4%;
+}
+
+.compact-list li {
+	float: left;
+	margin-right: 5px;
+}
+
+.compact-list li:after {
+	content: ", ";
+}
+
+.compact-list .lastItem:after {
+	content: "";
+}
+
+.resume-more-button {
+	border: 0;
+	text-transform: uppercase;
+	background: #49a0d8;
+	font-size: 14px;
+	color: #eeeeee;
+	margin: 15px auto 5px auto;
+	cursor: pointer;
+	width: 200px;
+	height: 50px;
+	letter-spacing: 1px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	outline: 0;
+}
+
+.resume-more-button:hover {
+	color: #eee;
+	background: #999;
+}
+
+.resume-more-button-container {
+	width: 100%;
+	text-align: center;
+}
+
+#more-experience-list {
+	display: none;
+}
+
+.resume-left-column {
+	clear: both;
+	float: left;
+	width: 50%;
+}
+
+.resume-right-column {
+	float: left;
+	width: 50%;
+	text-align: right;
+}
+
+.adobe-certification-image {
+	margin: 30px auto 0 auto;
+	width: 173px;
+	height: 40px;
+	background-image: url(http://seed3.watermelonduck.com/adobe-certified-expert.png);
+}
+
+.resume-logo {
+	margin-left: -200px;
+	position: absolute;
+}
+
+.upper-divide {
+	display: block;
+}
+
+/**
+* Contact
+*/
+
+.field {
+	border: 1px solid #ccc;
+	font-size: 16px;
+	padding: 5px;
+	display: block; 
+	width: 100%;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.field:invalid {
+	background-color: #DC4B25;
+	border: 1px solid #333;
+}
+
+fieldset {
+	margin: 0;
+	border: 0;
+	text-align: left;
+}
+
+.contact-label {
+	font-family: "Questrial", "Helvetica", "Arial", sans-serif;
+	margin-bottom: 0;
+}
+
+.contact-input input, .contact-input textArea {
+	font-family: "Questrial", "Helvetica", "Arial", sans-serif;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+dt {
+	text-align: left;
+	font-size: 12px;
+	color: #444444;
+	font-weight: bold;
+}
+
+.hide {
+	display: none;
+}
+
+.submit-button-wrapper {
+	width: 100%;
+	text-align: center;
+}
+
+.submit-button {
+	border: 0;
+	text-transform: uppercase;
+	background-color: #49a0d8;
+	font-size: 14px;
+	color: #eeeeee;
+	margin: 15px 0 5px 0;
+	cursor: pointer;
+	width: 200px;
+	height: 50px;
+	letter-spacing: 1px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	outline: 0;
+	border-radius: 4px;
+	-webkit-appearance: none;
+}
+
+.submit-button:hover {
+	color: #eee;
+	background: #999;
+}
+
+.submit-button:active {
+	color: #eee;
+	background: #df4b26;
+}
+
+.contact-message-icon {
+	text-align: center;
+	font-size: 32px;
+	color: #DC4B25;
+	margin-bottom: 15px;
+}
+
+.additional-info {
+	font-family: "Questrial", "Helvetica", "Arial", sans-serif;
+	text-align: center;
+	font-size: 11px;
+}
+
+.email-sent {
+	background: #eee;
+	color: #999;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="submit"]:focus, textarea:focus {
+    background-image: none;
+    background: #ddd;
+}
+
+/**
+* Sitemap
+*/
+
+.sitemap-list {
+	list-style: disc;
+	font-size: 14px;
+	padding: 5px 5px 20px 80px;
+}
+
+.sitemap-list-item {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/**
+* About
+*/
+
+.william-malone-photo {
+	background-image: url(http://www.williammalone.com/about/profile.jpg);
+	display: block;
+	width: 145px;
+	height: 145px;
+	margin-left:35px;
+	transition: border-radius 0.15s linear;
+	-webkit-transition: border-radius 0.15s linear;
+	-moz-transition: border-radius 0.15s linear;
+	-ms-transition: border-radius 0.15s linear;
+	border-radius: 4px;
+}
+
+.about-social-list {
+	list-style: disc;
+	margin: 0 4% 0 8%;
+}
+
+#follow-me-on-twitter {
+	margin-bottom: 5px;	
+}
+
+/**
+* Page Not Found 404
+*/
+
+#not-found-page-content {	
+	padding: 20px;
+	text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+
+	h1 {
+		font-size: 28px;
+		color: #444;
+	}
+	
+	#page {
+		min-width: 320px; /* For browsers without media query support */	
+	}
+	
+	#content {
+		margin-right: 5%;
+	}
+	
+	.collection img {
+		width: 100%;	
+		height: auto;
+	}
+	
+	.iconLabel {
+		display: none;
+	}
+	
+	#follow-me-on-twitter {
+		top: 150px;
+		left: 60px;
+	}
+	
+	#follow-me-on-twitter-icon {
+		display: block;
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		background-color: #49a0d8;
+		text-align: center;
+		font-size: 24px;
+		color: #fff;
+		padding: 2px;
+	}
+	
+	#follow-me-on-twitter-icon:hover {
+		background-color: #fff;
+		color: #49a0d8;
+	}
+	
+	#follow-me-on-twitter-icon a {
+		color: #fff;
+	}
+	
+	#add-me-to-google-plus {
+		top: 150px;
+		left: 110px;
+		display: block;
+		width: 35px;
+		height: 35px;
+	}
+	
+	#add-me-to-google-plus-icon {
+		display: block;
+		font-size: 24px;
+		background-color: #DC4B25;
+		color: #fff;
+		width: 35px;
+		height: 35px;
+		text-align: center;
+		border-radius: 50%;
+		padding: 2px;
+	}
+	
+	#add-me-to-google-plus-icon:hover {
+		background-color: #fff;
+		color: #DC4B25;
+	}
+	
+	#add-me-to-google-plus-icon a {
+		color: #fff;
+	}
+	
+	.william-malone-photo {
+		border-radius: 50%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	h1 {
+		margin-top: 25px;
+	}
+
+	#aside {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	
+	#content {
+		margin-left: 5%;
+		-webkit-transition: margin-left 0.25s linear;
+	}
+	
+	.william-malone-photo {
+		margin: 0 auto 0 auto;
+		background-image: url(http://www.williammalone.com/about/profile_long.jpg);
+		width: 372px;
+		height: 198px;
+		transition: width 0.25s linear;
+		-webkit-transition: width 0.25s linear;
+		-moz-transition: width 0.25s linear;
+		-ms-transition: width 0.25s linear;
+		background-position: center;
+		border-radius: 0;
+	}
+	
+	#follow-me-on-twitter {
+		top: 90px;
+		left: 28%;
+	}
+	
+	#add-me-to-google-plus {
+		top: 140px;
+		left: 28%;
+	}
+	
+	.subtitle {
+		border: none;
+		padding: 0;
+		margin-bottom: 30px;
+	}
+	
+	.subtitle-standalone {
+		text-align: left;
+	}
+	
+	.resume-logo {
+		display: none;
+	}
+	
+	.contact-message-icon {
+		margin-top: 4%;
+		margin-bottom: -4%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	
+	#home-link, #home-link-down {
+		display: none;	
+	}
+	
+	.william-malone-photo {
+		width: 100%;
+	}
+	
+	#follow-me-on-twitter {
+		left: 24%;
+	}
+	
+	#add-me-to-google-plus {
+		left: 24%;
+	}
+	
+	.nav-link a {
+		margin: 0;
+		width: 25%;
+	}
+
+	#nav {
+		width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.william-malone-photo {
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	h1 {
+		margin: 6% 4% 5% 4%;
+	}
+
+	html {
+		min-width: 320px;
+		background-image: none;
+	}
+	
+	#content-wrapper {
+		padding-top: 0;
+		margin-left: 0;
+		margin-right: 0;
+		background-image: none;
+	}
+	
+	.about-social-list {
+		list-style: none;
+		margin: 0;
+		padding-bottom: 10px;
+	}
+	
+	#underNav {
+		display: none;	
+	}
+	
+	#contentEndCap {
+		display: none;	
+	}
+	
+	.sitemap-list {
+		padding: 0;
+	}
+	
+	.sitemap-list li {
+		list-style: none;
+	}
+
+	.mobile-button {
+		margin: 10px 0;
+		border: solid 2px #ddd;
+		padding: 10px 10px;
+		display: block;
+		font-size: 18px;
+		border: solid 1px #ddd;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		-moz-box-shadow: 2px 2px 5px #ccc;
+		-webkit-box-shadow: 2px 2px 5px #ccc;
+		box-shadow: 2px 2px 5px #ccc;
+		width: 93%;
+	}
+	
+	.footer-text-link {
+		margin-left: 4%;
+		margin-right: 4%;
+	}
+	
+	.down {
+		background-color: #DE4C0E;
+	}
+	
+	a.down:visited {
+		color: #fff;
+	}
+	
+	#footer-text-nav {
+		overflow: hidden;
+	}
+	
+	#footer-text-nav > .mobile-button {
+		float: left;
+		width: 38%;
+	}
+
+	#footer-text-nav > .mobile-button: last-child {
+		width: 100%;
+	}
+	
+	#william-malone-logo {
+		margin: 0 auto 20px auto;
+		transition: margin-bottom 0.25s linear;
+		-webkit-transition: margin-bottom 0.25s linear;
+		-moz-transition: margin-bottom 0.25s linear;
+		-ms-transition: margin-bottom 0.25s linear;
+	}
+	
+	#nav {
+		width: 100%;
+		margin-bottom: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	.nav-down a {
+		color: #fff;
+		background-color: #de4c0e;
+		height: 32px;
+	}
+	
+	#nav-over-icon, #nav-down-icon {
+		display: none;	
+	}
+	
+	.nav-down a:hover {
+		color: #fff;
+	}
+	
+	.william-malone-photo {
+		border: 0;
+	}
+	
+	#follow-me-on-twitter {
+		left: 16%;
+		top: 75px;
+	}
+	
+	#follow-me-on-twitter-icon {
+		font-size: 28px;
+		width: 40px;
+		height: 40px;
+	}
+	
+	#add-me-to-google-plus {
+		left: 16%;
+		top: 130px;
+	}
+	
+	#add-me-to-google-plus-icon {
+		font-size: 28px;
+		width: 40px;
+		height: 40px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+
+	#follow-me-on-twitter {
+		left: 11%;
+		top: 50px;
+	}
+
+	#follow-me-on-twitter-icon {
+		font-size: 34px;
+		width: 50px;
+		height: 50px;
+	}
+	
+	#add-me-to-google-plus {
+		left: 11%;
+		top: 120px;
+	}
+	
+	#add-me-to-google-plus-icon {
+		font-size: 34px;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+@media screen and (max-width: 372px) {
+	.william-malone-photo {
+		width: 100%;
+		height: 150px;
+		border: 0;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 320px) {
+
+	body {
+		padding-top: 15px;
+	}
+	
+	#content {
+		margin-left: 4%;
+		margin-right: 4%;
+		transition: margin-left 0.25s linear;
+		-webkit-transition: margin-left 0.25s linear;
+		-moz-transition: margin-left 0.25s linear;
+		-ms-transition: margin-left 0.25s linear;
+	}
+	
+	.nav-link a {
+		width: 80px;
+	}
+	
+	#copyright {
+		margin-left: 4%;
+		margin-right: 4%;
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2){
+	#william-malone-logo {
+		background-image: url(http://seed1.watermelonduck.com/william-malone-logo-2x.png);
+		background-size: 100%;
+	}
+	
+	.william-malone-photo {
+		background-image: url(http://www.williammalone.com/about/profile-2x.jpg);
+		background-size: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2){
+	.william-malone-photo {
+		background-image: url(http://www.williammalone.com/about/profile_long-2x.jpg);
+		background-size: 100%;
+	}
+}

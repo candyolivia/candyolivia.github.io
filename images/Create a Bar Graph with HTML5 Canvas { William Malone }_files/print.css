@@ -1,0 +1,27 @@
+#williamMaloneLogo, #nav, #underNav, #contentEndCap, #footer, #underFooter, #contentLeft, #contentRight, .moreButtonContainer, .resumeLogo, footer {
+	display: none;	
+}
+
+a:link, a:visited {
+	background: transparent; 
+	color:#333; 
+	text-decoration:none;
+}
+
+a:link[href^="http://"]:after,
+a[href^="http://"]:visited:after {
+	content: " (" attr(href) ")";
+	font-size: 11pt;
+}
+
+a[href^="http://"] {
+	color:#000;
+}
+
+abbr {
+	text-decoration: none;
+}
+
+#copyright {
+
+}

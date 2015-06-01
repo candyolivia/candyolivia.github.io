@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/hover.css" rel="stylesheet" media="all">
+  <link href="assets/css/nv.d3.min.css" rel="stylesheet">
+  <script src="assets/js/ie-emulation-modes-warning.js"></script>
+  <script src="assets/js/d3.js"></script>
+  <script src="assets/js/nv.d3.min.js"></script>
+  <link href="style.css" rel="stylesheet">
+</head>
+  <title>Paradoks Simpson</title>
+<body>
+ <div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <br>
+      <div class="jumbotron" style="text-align:center; padding-top:10px; padding-bottom:20px; color:white; font-family:BIG JOHN">
+        <a href="essay.html" style="color:white"><h1>
+          Paradoks Simpson
+        </h1></a>
+      </div>
+      <div class="row clearfix" style="text-align:justify">
+        <div class="col-md-2 column">
+        </div>
+        <div class="col-md-6 column">
+          <h1 style="font-family:BIG JOHN; color:#9a6016; padding-bottom:10px">
+          Sejarah
+          </h1>
+          <p style="font-weight:bold; font-size:20px">
+            Fenomena ini pertama dikemukakan oleh Edward Herrick Simpson, seorang penulis teknik di tahun 1951. Namun, fenomena ini telah disebutkan oleh seorang statistikawan Karl Pearson, dkk di tahun 1899 dan Udny Yule pada tahun 1903. Nama paradoks Simpson ini baru diperkenalkan oleh Colin R. Blyth pada tahun 1972.
+          </p>
+        </div>
+        <div class="col-md-4 column">
+          <div class="pic">
+            <div class="text">
+              Edward Herrick Simpson
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row clearfix" style="padding-top:20px; text-align:justify">
+        <div class="col-md-3 column">
+        </div>
+        <div class="col-md-9 column">
+         <h1 style="font-family:BIG JOHN; color:#9a6016; padding-bottom:10px">
+          Penyebab
+          </h1>
+          <div style="font-weight:bold; font-size:20px">
+            Paradoks Simpson terjadi karena dua buah kejadian terjadi bersamaan:
+          </div>
+          <div style="font-weight:bold; font-size:20px">
+              1.  Ukuran data dalam kelompok yang sangat jauh berbeda.
+          </div>
+          <div style="font-weight:bold; font-size:20px">
+              2.  Variabel tersembunyi yang memiliki dampak yang besar terhadap rasio.
+          </div>
+        </div>
+      </div>
+      <div class="row clearfix" style="padding-top:20px; text-align:justify">
+        <div class="col-md-2 column">
+        </div>
+        <div class="col-md-8 column">
+          <h1 style="font-family:BIG JOHN; color:#9a6016; padding-bottom:10px">
+          Contoh Kasus
+          </h1>
+          <div style="font-weight:bold; font-size:20px">
+            Salah satu contoh yang paling populer dan sangat sering ditemukan dalam kehidupan sehari-hari adalah paradoks Simpson yang muncul di Universitas Carlifornia, Berkeley (1973) dimana terjadi gugatan diskriminasi gender terhadap universitas ini.  Siswa laki-laki yang baru diterima 44% tetapi hanya 35% siswa perempuan yang diterima. Namun, ketika para pengamat melihat buktinya, mereka menemukan sesuatu yang sangat mengejutkan. Faktanya, kebanyakan departemen hanya memiliki sedikit ketidakseimbangan terhadap siswa perempuan. Berikut adalah data dari 6 departemen yang ada.
+        </div>
+        <br>
+        <div style="padding-top:10px; padding-bottom:20px">
+          <center><table style="text-align:center">
+            <tr>
+              <th rowspan="2" style="text-align:center">Department</th>
+              <th colspan="2" style="text-align:center">Men</th>
+              <th colspan="2" style="text-align:center">Women</th>
+            </tr>
+            <tr class="acad">
+              <td>  Accepted  </td>
+              <td>  Admitted  </td>
+              <td>  Accepted  </td>
+              <td>  Admitted  </td>
+            </tr>
+            <tr>
+              <td>A</td>
+              <td>825</td>
+              <td>62%</td>
+              <td>108</td>
+              <td>82%</td>
+            </tr>
+
+            <tr>
+              <td>B</td>
+              <td>560</td>
+              <td>63%</td>
+              <td>25</td>
+              <td>68%</td>
+            </tr>
+
+            <tr>
+              <td>C</td>
+              <td>325</td>
+              <td>37%</td>
+              <td>593</td>
+              <td>34%</td>
+            </tr>
+
+
+            <tr>
+              <td>D</td>
+              <td>417</td>
+              <td>33%</td>
+              <td>375</td>
+              <td>35%</td>
+            </tr>
+
+            <tr>
+              <td>E</td>
+              <td>191</td>
+              <td>28%</td>
+              <td>393</td>
+              <td>24%</td>
+            </tr>
+
+            <tr>
+              <td>F</td>
+              <td>272</td>
+              <td>6%</td>
+              <td>341</td>
+              <td>7%</td>
+            </tr>
+          </table>
+          </center>
+        </div>
+        <div class="col-md-2 column">
+        </div>
+      </div>
+  </div>
+  </div>
+     <div class="row clearfix" style="padding-top:20px; text-align:justify">
+        <div class="col-md-2 column">
+        </div>
+        <div class="col-md-4 column">
+        <div style="padding-top:10px; padding-bottom:20px">
+          <span id="chart" style="color:brown; font-weight:bold">
+            <center><h1>Men</h1></center>
+            <svg></svg>
+          </span>
+          <script type="text/javascript">
+            var h = 600;
+            var r = h/2;
+            var arc = d3.svg.arc().outerRadius(r);
+
+            var data = [
+                {"label":"Rejected (n=4728) ", "value":4728}, 
+                {"label":"Accepted (n=3714)", "value":3714}, 
+            ];
+
+
+            var colors = [
+                'rgb(178, 55, 56)',
+                'rgb(230, 125, 126)'
+            ]
+
+
+            nv.addGraph(function() {
+                var chart = nv.models.pieChart()
+                    .x(function(d) { return d.label })
+                    .y(function(d) { return d.value })
+                    .color(colors)
+                    .showLabels(true)
+                    .labelType("percent")
+            //        .donut(true).donutRatio(0) /* Trick to make the labels go inside the chart*/
+                ;
+                
+                d3.select("#chart svg")
+                    .datum(data)
+                    .transition().duration(1200)
+                    .call(chart)
+                ;
+
+                d3.selectAll(".nv-label text")
+                    /* Alter SVG attribute (not CSS attributes) */
+                    .attr("transform", function(d){
+                        d.innerRadius = -450;
+                        d.outerRadius = r;
+                        return "translate(" + arc.centroid(d) + ")";}
+                    )
+                    .attr("text-anchor", "middle")
+                    /* Alter CSS attributes */
+                    .style({"font-size": "1em"})
+                ;
+                
+                /* Replace bullets with blocks */
+                d3.selectAll('.nv-series').each(function(d,i) {
+                    var group = d3.select(this),
+                        circle = group.select('circle');
+                    var color = circle.style('fill');
+                    circle.remove();
+                    var symbol = group.append('path')
+                        .attr('d', d3.svg.symbol().type('square'))
+                        .style('stroke', color)
+                        .style('fill', color)
+                        // ADJUST SIZE AND POSITION
+                        .attr('transform', 'scale(1.5) translate(-2,0)')
+                });
+
+                    
+                return chart;
+            });
+
+            </script>
+        </div>
+      </div>
+        <div class="col-md-4 column">
+          <div style="padding-top:10px; padding-bottom:20px">
+          <span id="chart2" style="color:brown; font-weight:bold">
+            <center><h1>Women</h1></center>
+            <svg></svg>
+          </span>
+          <script type="text/javascript">
+            var h = 600;
+            var r = h/2;
+            var arc = d3.svg.arc().outerRadius(r);
+
+            var data2 = [
+                {"label":"Rejected (n=2809) ", "value":2809}, 
+                {"label":"Accepted (n=1512)", "value":1512}, 
+            ];
+
+
+            var colors = [
+                'rgb(178, 55, 56)',
+                'rgb(230, 125, 126)'
+            ]
+
+
+            nv.addGraph(function() {
+                var chart = nv.models.pieChart()
+                    .x(function(d) { return d.label })
+                    .y(function(d) { return d.value })
+                    .color(colors)
+                    .showLabels(true)
+                    .labelType("percent")
+            //        .donut(true).donutRatio(0) /* Trick to make the labels go inside the chart*/
+                ;
+                
+                d3.select("#chart2 svg")
+                    .datum(data2)
+                    .transition().duration(1200)
+                    .call(chart)
+                ;
+
+                d3.selectAll(".nv-label text")
+                    /* Alter SVG attribute (not CSS attributes) */
+                    .attr("transform", function(d){
+                        d.innerRadius = -450;
+                        d.outerRadius = r;
+                        return "translate(" + arc.centroid(d) + ")";}
+                    )
+                    .attr("text-anchor", "middle")
+                    /* Alter CSS attributes */
+                    .style({"font-size": "1em"})
+                ;
+                
+                /* Replace bullets with blocks */
+                d3.selectAll('.nv-series').each(function(d,i) {
+                    var group = d3.select(this),
+                        circle = group.select('circle');
+                    var color = circle.style('fill');
+                    circle.remove();
+                    var symbol = group.append('path')
+                        .attr('d', d3.svg.symbol().type('square'))
+                        .style('stroke', color)
+                        .style('fill', color)
+                        // ADJUST SIZE AND POSITION
+                        .attr('transform', 'scale(1.5) translate(-2,0)')
+                });
+
+                    
+                return chart;
+            });
+
+            </script>
+          </div>
+        </div>
+        <div class="col-md-2 column">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html> 

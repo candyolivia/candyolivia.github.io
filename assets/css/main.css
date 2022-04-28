@@ -14190,9 +14190,6 @@ pre, code { font-family: 'Source Code Pro', monospace; font-weight: normal; font
 
 .hljs-strong { font-weight: bold; }
 
-.google-maps {
-    position: relative;
-    display:inline;
-    text-align:center;
-    border:0; margin:0 auto;
-  }
+.map-responsive{ overflow:hidden; padding-bottom:56.25%; position:relative; height:0; }
+
+.map-responsive iframe{ left:0; top:0; height:100%; width:100%; position:absolute; }

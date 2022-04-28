@@ -14189,3 +14189,9 @@ pre, code { font-family: 'Source Code Pro', monospace; font-weight: normal; font
 .hljs-emphasis { font-style: italic; }
 
 .hljs-strong { font-weight: bold; }
+
+.google-maps {
+    position: relative;
+    display:block;
+    margin-right:auto;margin-left:auto;
+  }

@@ -11169,6 +11169,9 @@ a:hover { text-decoration: none; }
 .wp-icon { color: #21759b; background: #21759b; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: initial; }
 .wp-icon:hover { color: #4aacd8; background: #4aacd8; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
 
+.dblp-icon { background: #ffffff; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: initial; }
+.dblp-icon:hover { background: #acc6f6; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+
 .cv h3 { color: #b71c1c; }
 
 .bibliography .abbr a:hover { background: #ff4444 !important; }
@@ -11207,7 +11210,7 @@ progress { position: fixed; left: 0; top: 56px; z-index: 10; width: 100%; height
 
 .progress-bar { display: block; width: 0%; height: inherit; }
 
-.profile-img { max-width: 60%; height: auto; width: auto; border-radius: 10%;}
+.profile-img { max-width: 90%; height: auto; width: auto; border-radius: 10%;}
 
 .contact-icon { display: block; font-size: 35px; }
 

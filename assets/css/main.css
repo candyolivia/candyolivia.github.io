@@ -5378,7 +5378,7 @@ body.scrollable { overflow-y: auto; }
 footer.page-footer { bottom: 0; color: #fff; }
 footer.page-footer .container-fluid, footer.page-footer .content { width: auto; }
 footer.page-footer .footer-copyright { overflow: hidden; background-color: rgba(0, 0, 0, 0.2); color: rgba(255, 255, 255, 0.6); }
-footer.page-footer a { color: #fff; }
+footer.page-footer a { color: #a20d0d; }
 
 .media .media-left { padding: 0 10px 10px 0; }
 .media .media-left img { box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }

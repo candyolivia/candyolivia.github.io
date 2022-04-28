@@ -11210,7 +11210,7 @@ progress { position: fixed; left: 0; top: 56px; z-index: 10; width: 100%; height
 
 .progress-bar { display: block; width: 0%; height: inherit; }
 
-.profile-img { max-width: 90%; height: auto; width: auto; border-radius: 10%;}
+.profile-img { max-width: 60%; height: auto; width: auto; border-radius: 10%;}
 
 .contact-icon { display: block; font-size: 35px; }
 

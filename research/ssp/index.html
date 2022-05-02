@@ -94,8 +94,93 @@
     <div class="text-justify p-0">
       <div class="clearfix" align="justify">
 
-        <p>Case studies of group discussions are considered an effective way to assess communication skills (CS). This method can help researchers evaluate participants’ engagement with each other in a specific realistic context. In this article, multimodal analysis was performed to estimate CS indices using a three-task-type group discussion dataset, the MATRICS corpus. The current research investigated the effectiveness of engaging both static and time-series modeling, especially in task-independent settings. This investigation aimed to understand three main points: first, the effectiveness of time-series modeling compared to nonsequential modeling; second, multimodal analysis in a task-independent setting; and third, important differences to consider when dealing with task-dependent and task-independent settings, specifically in terms of modalities and prediction models. Several modalities were extracted (e.g., acoustics, speaking turns, linguistic-related movement, dialog tags, head motions, and face feature sets) for inferring the CS indices as a regression task. Three predictive models, including support vector regression (SVR), long short-term memory (LSTM), and an enhanced time-series model (an LSTM model with a combination of static and time-series features), were taken into account in this study. Our evaluation was conducted by using the R2 score in a cross-validation scheme. The experimental results suggested that time-series modeling can improve the performance of multimodal analysis significantly in the task-dependent setting (with the best R2 = 0.797 for the total CS index), with word2vec being the most prominent feature. Unfortunately, highly context-related features did not fit well with the task-independent setting. Thus, we propose an enhanced LSTM model for dealing with task-independent settings, and we successfully obtained better performance with the enhanced model than with the conventional SVR and LSTM models (the best R2 = 0.602 for the total CS index). In other words, our study shows that a particular time-series modeling can outperform traditional nonsequential modeling for automatically estimating the CS indices of a participant in a group discussion with regard to task dependency.</p>
+        <p>Case studies of group discussions are considered an effective way to assess communication skills (CS). This method can help researchers evaluate participants’ engagement with each other in a specific realistic context. In this article, multimodal analysis was performed to estimate CS indices using a three-task-type group discussion dataset, the MATRICS corpus. The current research investigated the effectiveness of engaging both static and time-series modeling, especially in task-independent settings.</p>
 
+        <p>This investigation aimed to understand three main points: first, the effectiveness of time-series modeling compared to nonsequential modeling; second, multimodal analysis in a task-independent setting; and third, important differences to consider when dealing with task-dependent and task-independent settings, specifically in terms of modalities and prediction models. Several modalities were extracted (e.g., acoustics, speaking turns, linguistic-related movement, dialog tags, head motions, and face feature sets) for inferring the CS indices as a regression task. Three predictive models, including support vector regression (SVR), long short-term memory (LSTM), and an enhanced time-series model (an LSTM model with a combination of static and time-series features), were taken into account in this study. Our evaluation was conducted by using the R2 score in a cross-validation scheme. </p>
+
+        <p>The experimental results suggested that time-series modeling can improve the performance of multimodal analysis significantly in the task-dependent setting (with the best R2 = 0.797 for the total CS index), with word2vec being the most prominent feature. Unfortunately, highly context-related features did not fit well with the task-independent setting. Thus, we propose an enhanced LSTM model for dealing with task-independent settings, and we successfully obtained better performance with the enhanced model than with the conventional SVR and LSTM models (the best R2 = 0.602 for the total CS index). In other words, our study shows that a particular time-series modeling can outperform traditional nonsequential modeling for automatically estimating the CS indices of a participant in a group discussion with regard to task dependency.</p>
+
+      </div>
+    </div>
+
+    <div class="card mt-3 p-3">
+      <h3 class="card-title">Related Publications</h3>
+      <div>
+        <ol class="bibliography">
+          <li>
+            <div class="row m-0 mt-3 p-0">
+              <div class="col-sm-1 p-0 abbr">
+                <a class="badge font-weight-bold danger-color-dark align-middle" style="width: 75px;" href="https://dl.acm.org/journal/tomm" target="_blank">
+                  TOMM
+                </a>
+              </div>
+              <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+                <div id="mon2021_tomm" class="col p-0">
+                  <h5 class="title mb-0">Task-independent Recognition of Communication Skills in Group Interaction Using Time-series Modeling.</h5>
+                  <div class="author">
+                    <nobr><em>Candy Olivia Mawalim</em>,</nobr> <nobr>Shogo Okada,</nobr>
+                    and
+                    <nobr>Yukiko I. Nakano.</nobr>
+                  </div>
+                  <div>
+                    <p class="periodical font-italic">
+                      ACM Transactions on Multimedia Computing Communications and Applications, vol. 17, no. 4, pp. 122:1-122:27, 2021.
+                    </p>
+                  </div>
+                  <div class="col p-0">
+                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#mon2021_tomm-abstract" role="button" aria-expanded="false" aria-controls="mon2021_tomm-abstract">Abstract</a>
+                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://doi.org/10.1145/3450283" target="_blank">DOI</a>
+                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://dl.acm.org/doi/pdf/10.1145/3450283" target="_blank">PDF</a>
+                  </div>
+                  <div class="col mt-2 p-0">
+                    <div id="mon2021_tomm-abstract" class="collapse">
+                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                        Case studies of group discussions are considered an effective way to assess communication skills (CS). This method can help researchers evaluate participants’ engagement with each other in a specific realistic context. In this article, multimodal analysis was performed to estimate CS indices using a three-task-type group discussion dataset, the MATRICS corpus. The current research investigated the effectiveness of engaging both static and time-series modeling, especially in task-independent settings. This investigation aimed to understand three main points: first, the effectiveness of time-series modeling compared to nonsequential modeling; second, multimodal analysis in a task-independent setting; and third, important differences to consider when dealing with task-dependent and task-independent settings, specifically in terms of modalities and prediction models. Several modalities were extracted (e.g., acoustics, speaking turns, linguistic-related movement, dialog tags, head motions, and face feature sets) for inferring the CS indices as a regression task. Three predictive models, including support vector regression (SVR), long short-term memory (LSTM), and an enhanced time-series model (an LSTM model with a combination of static and time-series features), were taken into account in this study. Our evaluation was conducted by using the R2 score in a cross-validation scheme. The experimental results suggested that time-series modeling can improve the performance of multimodal analysis significantly in the task-dependent setting (with the best R2 = 0.797 for the total CS index), with word2vec being the most prominent feature. Unfortunately, highly context-related features did not fit well with the task-independent setting. Thus, we propose an enhanced LSTM model for dealing with task-independent settings, and we successfully obtained better performance with the enhanced model than with the conventional SVR and LSTM models (the best R2 = 0.602 for the total CS index). In other words, our study shows that a particular time-series modeling can outperform traditional nonsequential modeling for automatically estimating the CS indices of a participant in a group discussion with regard to task dependency.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="row m-0 mt-3 p-0">
+              <div class="col-sm-1 p-0 abbr">
+                <a class="badge font-weight-bold success-color-dark align-middle" style="width: 75px;" href="https://www.springer.com/gp/computer-science/lncs" target="_blank">
+                  LNCS
+                </a>
+              </div>
+              <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+                <div id="monu2019_lncs" class="col p-0">
+                  <h5 class="title mb-0">Multimodal BigFive Personality Trait Analysis using Communication Skill Indices and Multiple Discussion Types Dataset.</h5>
+                  <div class="author">
+                    <nobr><em>Candy Olivia Mawalim</em>, </nobr> <nobr>Shogo Okada, </nobr><nobr>Yukiko I. Nakano, </nobr>
+                    and
+                    <nobr>Masashi Unoki.</nobr>
+                  </div>
+                  <div>
+                    <p class="periodical font-italic">
+                      Springer LNCS Social Computing and Social Media: Design, Human Behavior, and Analytics, Springer, vol. 11578, 2019.
+                    </p>
+                  </div>
+                  <div class="col p-0">
+                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#monu2019_lncs-abstract" role="button" aria-expanded="false" aria-controls="monu2019_lncs-abstract">Abstract</a>
+                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://link.springer.com/chapter/10.1007/978-3-030-21902-4_27" target="_blank">DOI</a>
+                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://link.springer.com/content/pdf/10.1007/978-3-030-21902-4_27.pdf" target="_blank">PDF</a>
+                  </div>
+                  <div class="col mt-2 p-0">
+                    <div id="monu2019_lncs-abstract" class="collapse">
+                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                        This paper focuses on multimodal analysis in multiple discussion types dataset for estimating BigFive personality traits. The analysis was conducted to achieve two goals: First, clarifying the effectiveness of multimodal features and communication skill indices to predict the BigFive personality traits. Second, identifying the relationship among multimodal features, discussion type, and the BigFive personality traits. The MATRICS corpus, which contains of three discussion task types dataset, was utilized in this experiment. From this corpus, three sets of multimodal features (acoustic, head motion, and linguistic) and communication skill indices were extracted as the input for our binary classification system. The evaluation was conducted by using F1-score in 10-fold cross validation. The experimental results showed that the communication skill indices are important in estimating agreeableness trait. In addition, the scope and freedom of conversation affected the performance of personality traits estimator. The freer a discussion is, the better personality traits estimator can be obtained.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
       </div>
     </div>
 

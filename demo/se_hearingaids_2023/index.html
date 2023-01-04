@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Demo Speech Enhancement in Hearing Aids</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="jumbotron text-center">
+	  <h3>Demo Speech Enhancement in Hearing Aids</h3>
+	  <hr>
+	  <h5>Candy Olivia Mawalim</h5>
+	  <h5>Japan Advanced Institute of Science and Technology</h5>
+	</div>
+	<div class="container">
+		<div class="row">
+	    <div class="col">
+	    </div>
+		<div class="col-12 text-center">
+			<label style="font-size:150%;vertical-align: top;"><strong>Sentence:</strong> "but it just grew out of all proportion"</label> <br>
+			<label style="font-size:150%;vertical-align: top;"><strong>Scene:</strong> S09377 (interferer: microwave noise)</label> <br>
+			<label style="font-size:150%;vertical-align: top;"><strong>Hearing aid (HA) processor:</strong> E007</label>
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						Target
+					</div>
+					<div class="controls col-sm-4">
+						Interferer
+					</div>
+					<div class="controls col-sm-4">
+						Mixed (Speech-in-noise)
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/S09377_target_anechoic.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/S09377_interferer.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/S09377_mixed_CH0.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:150%;vertical-align: top;"><strong>Listener:</strong> L0221 (female 81 years old)</label>
+				<div class="input-group mb-3">
+					<label class="control-label col-sm-2"></label>
+					<div class="controls col-sm-5 imgbox">
+						<img class="center-fit" src="images/audiogram_L0221.png"/>
+					</div>
+					<label class="control-label col-sm-2"></label>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						HA output (after enhancement)
+					</div>
+					<div class="controls col-sm-6">
+						Hearing loss output
+					</div>
+				</div>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/S09377_L0221_E007.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/S09377_L0221_E007_HL-output.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+
+				<hr>
+
+				<label style="font-size:150%;vertical-align: top;"><strong>Listener:</strong> L0218 (male 74 years old)</label> 
+				<div class="input-group mb-3">
+					<label class="control-label col-sm-2"></label>
+					<div class="controls col-sm-5 imgbox">
+						<img class="center-fit" src="images/audiogram_L0218.png"/>
+					</div>
+					<label class="control-label col-sm-2"></label>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						HA output (after enhancement)
+					</div>
+					<div class="controls col-sm-6">
+						Hearing loss output
+					</div>
+				</div>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/S09377_L0218_E007.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/S09377_L0218_E007_HL-output.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+		  	</div>
+
+			<div class="input-group mb-5">
+			    &nbsp;
+			</div>
+
+	    </div>
+	    <div class="col">
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>

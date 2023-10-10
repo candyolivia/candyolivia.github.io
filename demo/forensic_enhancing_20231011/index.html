@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Forensic Enhancing using Existing Methods</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="jumbotron text-center">
+	  <h3>Forensic Enhancing using Existing Methods</h3>
+	  <hr>
+	  <h5>Forensic Enhancing Team</h5>
+	  <h5>Affiliation</h5>
+	</div>
+	<div class="container">
+		<div class="row">
+	    <div class="col">
+	    </div>
+		<div class="col-12 text-center">
+			<label style="font-size:150%;vertical-align: top;"><strong>Preliminary Test:</strong> Forensic Audio Sample</label> <br>
+			<label style="font-size:150%;vertical-align: top;"><strong>Script:</strong> Unknown </label> <br>
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						Original Part-1
+					</div>
+					<div class="controls col-sm-6">
+						Original Part-2
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/preliminary/original/20215-20315 ORIG-48k-mono-part1.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/preliminary/original/20215-20315 ORIG-48k-mono-part1.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>Method (Xin):</strong> Spectral Substraction</label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						Enhanced Part-1 (POLQA = 3.01)
+					</div>
+					<div class="controls col-sm-6">
+						Enhanced Part-2 (POLQA = 2)
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/preliminary/enhanced/20215-20315_ENH_Method2-48k-mono-part1.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/preliminary/enhanced/20215-20315_ENH_Method2-48k-mono-part2.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>Method (Xin):</strong> Energy-based Binary Mask</label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						Enhanced Part-1 (POLQA = 2.3)
+					</div>
+					<div class="controls col-sm-6">
+						Enhanced Part-2 (POLQA = 2.32)
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/preliminary/enhanced/20215-20315_ENH_Method3-48k-mono-part1.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/preliminary/enhanced/20215-20315_ENH_Method3-48k-mono-part2.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>Method (Helen):</strong> Manual</label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						Enhanced Part-1 (POLQA = 2.74)
+					</div>
+					<div class="controls col-sm-6">
+						Enhanced Part-2 (POLQA = 2.7)
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/preliminary/enhanced/20215-20315 ENH-48k-mono-part1.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/preliminary/enhanced/20215-20315 ENH-48k-mono-part2.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>Method (Emma):</strong> Manual</label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						Enhanced Part-1 (POLQA = 2.52)
+					</div>
+					<div class="controls col-sm-6">
+						Enhanced Part-2 (POLQA = 1.95)
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/preliminary/enhanced/EQ-Enhanced File-1.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/preliminary/enhanced/EQ-Enhanced File-2.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>Method (Candy):</strong> Pretrained model (Sepformer-Wham-16kHz)</label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						Enhanced Part-1 (POLQA = 3.21)
+					</div>
+					<div class="controls col-sm-6">
+						Enhanced Part-2 (POLQA = 2.99)
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/preliminary/enhanced/sepformer-wham16k-enhancement_20215-20315 ORIG-48k-mono-part1.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/preliminary/enhanced/sepformer-wham16k-enhancement_20215-20315 ORIG-48k-mono-part2.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>Method (Candy):</strong> Pretrained model (Sepformer-DNS4-16kHz)</label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						Enhanced Part-1 (POLQA = 1.63)
+					</div>
+					<div class="controls col-sm-6">
+						Enhanced Part-2 (POLQA = 1.49)
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/preliminary/enhanced/sepformer-dns4-16k-enhancement_20215-20315 ORIG-48k-mono-part1.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/preliminary/enhanced/sepformer-dns4-16k-enhancement_20215-20315 ORIG-48k-mono-part2.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>Method (Candy):</strong> Pretrained model (MetricGAN+-VoiceBank)</label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						Enhanced Part-1 (POLQA = 1)
+					</div>
+					<div class="controls col-sm-6">
+						Enhanced Part-2 (POLQA = 1)
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/preliminary/enhanced/metricgan-plus-voicebank_20215-20315 ORIG-48k-mono-part1.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/preliminary/enhanced/metricgan-plus-voicebank_20215-20315 ORIG-48k-mono-part2.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+				<hr>
+
+				<label style="font-size:150%;vertical-align: top;"><strong>Simulated Speech:</strong> Speech + 3 Interferers</label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						Clean speech
+					</div>
+					<div class="controls col-sm-6">
+						Noisy speech
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/simulated_noisy/original/S06071_target_CH1.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/simulated_noisy/original/S06071_mix_CH1.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>Enhanced speech:</strong> Pretrained model </label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						Sepformer-Wham-16kHz
+					</div>
+					<div class="controls col-sm-4">
+						Sepformer-DNS4-16kHz
+					</div>
+					<div class="controls col-sm-4">
+						MetricGAN+-VoiceBank
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/simulated_noisy/enhanced/sepformer-wham16k-enhancement_S06071_mix_CH1.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/simulated_noisy/enhanced/sepformer-dns4-16k-enhancement_S06071_mix_CH1.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/simulated_noisy/enhanced/metricgan-plus-voicebank_S06071_mix_CH1.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>Enhanced speech:</strong> Existing Tools </label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						Adobe Podcast
+					</div>
+					<div class="controls col-sm-6">
+						Dolbyio
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/simulated_noisy/enhanced/S06071_mix_CH1 (enhanced)_adobePodcast.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/simulated_noisy/enhanced/S06071_mix_CH1_Dolbyio.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+		  	</div>
+
+			<div class="input-group mb-5">
+			    &nbsp;
+			</div>
+
+	    </div>
+	    <div class="col">
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>

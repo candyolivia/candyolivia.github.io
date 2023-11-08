@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Forensic Enhancing using Existing Methods</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="jumbotron text-center">
+	  <h3>Speech Enhancement Using Demucs Architectures - Train or Fine Tune on CEC2 Dataset</h3>
+	  <hr>
+	  <h5>Candy Olivia Mawalim</h5>
+	  <h5>JAIST</h5>
+	</div>
+	<div class="container">
+		<div class="row">
+	    <div class="col">
+	    </div>
+		<div class="col-12 text-center">
+			<label style="font-size:150%;vertical-align: top;"><strong>Samples:</strong> CEC2 Development Set (CH1)</label> <br>
+			<hr>
+
+			<label style="font-size:100%;vertical-align: top;"><strong>Unprocessed Data:</strong> Development Set Mix</label>
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						S06001_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						S06071_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						S07364_mix_CH1
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/S06001_mix_CH1_noisy.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/S06071_mix_CH1_noisy.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/S07364_mix_CH1_noisy.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>M1:</strong> Train on CEC2 (loss_function = L1, epochs = 100)</label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						ep100_S06001_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						ep100_S06071_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						ep100_S07364_mix_CH1
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/ep100_S06001_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/ep100_S06071_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/ep100_S07364_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>M2:</strong> Train on CEC2 (loss_function = L1, epochs = 500)</label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						ep500_S06001_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						ep500_S06071_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						ep500_S07364_mix_CH1
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/ep500_S06001_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/ep500_S06071_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/ep500_S07364_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>M3:</strong> Train on CEC2 (loss_function = MultiResolution STFT, epochs = 100)</label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						stftloss_100_S06001_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						stftloss_100_S06071_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						stftloss_100_S07364_mix_CH1
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/stftloss_100_S06001_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/stftloss_100_S06071_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/stftloss_100_S07364_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>M4:</strong> Train on CEC2 (loss_function = MultiResolution STFT, epochs = 200)</label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						stftloss_200_S06001_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						stftloss_200_S06071_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						stftloss_200_S07364_mix_CH1
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/stftloss_200_S06001_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/stftloss_200_S06071_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/stftloss_200_S07364_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>M5:</strong> Fine tune DNS48 with CEC2 Training Set (loss_function = MultiResolution STFT, epochs = 100)</label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						dns48_100_S06001_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						dns48_100_S06071_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						dns48_100_S07364_mix_CH1
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/dns48_100_S06001_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/dns48_100_S06071_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/dns48_100_S07364_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>M6:</strong> Fine tune DNS48 with CEC2 Training Set (loss_function = MultiResolution STFT, epochs = 200)</label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						dns48_200_S06001_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						dns48_200_S06071_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						dns48_200_S07364_mix_CH1
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/dns48_200_S06001_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/dns48_200_S06071_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/dns48_200_S07364_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>M7:</strong> Fine tune DNS48 with CEC2 Training Set (Fs= 44.1 kHz, loss_function = MultiResolution STFT, epochs = 200)</label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						dns48_44kHz_200_S06001_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						dns48_44kHz_200_S06071_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						dns48_44kHz_200_S07364_mix_CH1
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/dns48_44kHz_ep200_S06001_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/dns48_44kHz_ep200_S06071_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="enhanced_dev_mono_finetune/dns48_44kHz_ep200_S07364_mix_CH1_enhanced.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+		  	</div>
+
+			<div class="input-group mb-5">
+			    &nbsp;
+			</div>
+
+	    </div>
+	    <div class="col">
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>

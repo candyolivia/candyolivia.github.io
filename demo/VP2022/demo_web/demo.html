@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Demo Speaker Anonymization</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="jumbotron text-center">
+	  <h3>Demo Speech of Paper Titled: </h3>
+	  	<br>
+	  	<h4>Speaker Anonymization by Pitch Shifting Based on Time-Scale Modification</h4>
+	  <hr>
+	  <h5>Candy Olivia Mawalim, Shogo Okada, and Masashi Unoki</h5>
+	  <h5>Japan Advanced Institute of Science and Technology</h5>
+	</div>
+	<div class="container">
+		<div class="row">
+	    <div class="col">
+	    </div>
+		<div class="col-12 text-center">
+			<div class="form-group">
+				<div class="input-group mb-3" style="font-weight: bold;">
+					<div class="controls col-sm-3">
+					</div>
+					<div class="controls col-sm-6">
+						Original Speech (Female)
+					</div>
+					<div class="controls col-sm-3">
+					</div>		
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-3">
+					</div>
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/O/4507-16021-0010.wav" controls controlsList="nodownload" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-3">
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="input-group mb-3" style="font-weight: bold;">
+					<div class="controls col-sm-12">
+						Baseline Systems (Anonymized Speech)
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						B1a
+					</div>
+					<div class="controls col-sm-4">
+						B2a (&alpha;=0.8)
+					</div>
+					<div class="controls col-sm-4">
+						B2b (&alpha;= rand(0.5,0.9))
+					</div>
+				</div>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/B1a/4507-16021-0010.wav" controls controlsList="nodownload" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/B2a/4507-16021-0010.wav" controls controlsList="nodownload" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/B2b/4507-16021-0010.wav" controls controlsList="nodownload" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="input-group mb-3" style="font-weight: bold;">
+					<div class="controls col-sm-12">
+						Proposed Methods (Anonymized Speech)
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						TD-PSOLA (&Delta;= rand(2,3))
+					</div>
+					<div class="controls col-sm-4">
+						PV-TSM (&Delta;= rand(2,3))
+					</div>
+					<div class="controls col-sm-4">
+						PV-TSM (&Delta;= rand(3,5))
+					</div>
+				</div>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/TDPSOLA_23/4507-16021-0010.wav" controls controlsList="nodownload" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/PVTSM_23/4507-16021-0010.wav" controls controlsList="nodownload" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/PVTSM_35/4507-16021-0010.wav" controls controlsList="nodownload" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+		  	</div>
+
+		  	<div class="form-group">
+				<div class="input-group mb-3" style="font-weight: bold;">
+					<div class="controls col-sm-3">
+					</div>
+					<div class="controls col-sm-6">
+						Original Speech (Male)
+					</div>
+					<div class="controls col-sm-3">
+					</div>		
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-3">
+					</div>
+					<div class="controls col-sm-6">
+						<audio controls style="width: 80%;">
+							<source src="sounds/O/2300-131720-0027.wav" controls controlsList="nodownload" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-3">
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="input-group mb-3" style="font-weight: bold;">
+					<div class="controls col-sm-12">
+						Baseline Systems (Anonymized Speech)
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						B1a
+					</div>
+					<div class="controls col-sm-4">
+						B2a (&alpha;=0.8)
+					</div>
+					<div class="controls col-sm-4">
+						B2b (&alpha;= rand(0.5,0.9))
+					</div>
+				</div>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/B1a/2300-131720-0027.wav" controls controlsList="nodownload" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/B2a/2300-131720-0027.wav" controls controlsList="nodownload" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/B2b/2300-131720-0027.wav" controls controlsList="nodownload" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="input-group mb-3" style="font-weight: bold;">
+					<div class="controls col-sm-12">
+						Proposed Methods (Anonymized Speech)
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						TD-PSOLA (&Delta;= rand(2,3))
+					</div>
+					<div class="controls col-sm-4">
+						PV-TSM (&Delta;= rand(2,3))
+					</div>
+					<div class="controls col-sm-4">
+						PV-TSM (&Delta;= rand(3,5))
+					</div>
+				</div>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/TDPSOLA_23/2300-131720-0027.wav" controls controlsList="nodownload" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/PVTSM_23/2300-131720-0027.wav" controls controlsList="nodownload" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/PVTSM_35/2300-131720-0027.wav" controls controlsList="nodownload" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+		  	</div>
+
+			<div class="input-group mb-5">
+			    &nbsp;
+			</div>
+
+	    </div>
+	    <div class="col">
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>

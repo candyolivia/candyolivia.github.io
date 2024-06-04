@@ -1,0 +1,130 @@
+<!--Sample of Evaluation and The Correct Answers -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>主観的評価</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	 * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+  </style>
+</head>
+
+<div class="jumbotron text-center">
+  <h2>主観的評価</h2>
+  <hr>
+</div>
+
+<div class="container">
+  <h3>実験説明</h3>
+  <ul>
+	  <li>この主観的評価の目的は、同じ内容の2つの音声から、話者の数に関する人間の知覚を分析することです。</li>
+	  <li>2つの音声は、(1)2つの発話が異なる話者によって発せられる場合、(2)2つの発話が同一話者によって発せられる場合、の2パターンあります。</li>
+	  <li>それぞれの音声が同じ話者から発せられたものか、同一話者によって発せられたものかを判断することが課題です。</li>
+	  <li>この実験では、いくつかの個人情報（氏名、性別、年齢、国籍、英語能力）に関するアンケートに回答して頂きます。</li>
+	  <li>私たちは、個人を特定できるデータを、当該の研究目的以外には使用しません。</li>
+	  <li>本調査に参加することを同意する場合は、下の「同意して次へ」ボタンをクリックしてください。</li>
+	</ul> 
+</div>
+
+<hr>
+
+<div class="container">
+	<h3>実験の流れ</h3>
+	<ul>
+		<li>最初に、あなたの個人情報（氏名、性別、年齢、国籍、英語能力）についてお聞かせください。</li>
+		<li>次に、いくつかの音源を聞いてください。</li>
+		<li>各音源に含まれる発話者の数を判別してください。</li>
+		<li>発話者の人数は、（1）間違いなく1人、（2）おそらく1人、（3）わからない、（4）おそらく2人、（5）間違いなく2人、の5つの選択肢から選べます。</li>
+		<li>以下はその例と正解です。</li>
+
+		<hr>
+
+		<div class="input-group mb-3">
+			<label class="control-label col-sm-2"></label>
+			<div class="controls col-sm-5 imgbox">
+				<img class="center-fit" src="images/first_example.png"/>
+			</div>
+			<label class="control-label col-sm-2"></label>
+		</div>
+
+		<div class="input-group mb-3">
+			<div class="controls col-sm-6">
+				<label style="font-size:150%;vertical-align: top;">1. &thinsp; </label> 
+				<audio controls style="width: 80%;">
+					<<source src="sounds/original/sample/p278_007_mic2.wav" type="audio/wav">
+				</audio>
+			</div>
+			<label class="control-label col-sm-3" for="s1">発話者の数=1</label>
+		</div>
+
+		<hr>
+
+		<div class="input-group mb-3">
+			<label class="control-label col-sm-2"></label>
+			<div class="controls col-sm-5 imgbox">
+				<img class="center-fit" src="images/second_example.png"/>
+			</div>
+			<label class="control-label col-sm-2"></label>
+		</div>
+
+		<div class="input-group mb-3">
+			<div class="controls col-sm-6">
+				<label style="font-size:150%;vertical-align: top;">2. &thinsp; </label> 
+				<audio controls style="width: 80%;">
+					<source src="sounds/original/sample/mixed_p278_p286.wav" type="audio/wav">
+				</audio>
+			</div>
+			<label class="control-label col-sm-3" for="s2">発話者の数=2</label>
+		</div>
+	</ul> 
+</div>
+
+<hr>
+
+<div class="container">
+  <h3>個人情報保護、インフォームドコンセントについて</h3>
+  <ol>
+  	  <li>本実験は北陸先端大のライフサイエンス委員会により承認されています。</li>
+	  <li>研究への参加は任意です。</li>
+	  <li>本調査への参加に同意しないことにより、不利益な扱いを受けることはありません。</li>
+	  <li>実験参加者は、本調査への参加に同意された後でも、自由にそれを取り消すことができます。</li>
+	  <li>実験参加者の請求があった場合、データを開示します。</li>
+	  <li>実験参加者が同意を取り消した場合でも、実験参加者が不利益な扱いを受けることはありません。</li>
+	  <li>実験参加者が同意を取り消した場合、提供されたデータは破棄されます。</li>
+	  <li>収集されたデータは匿名化され，厳重に管理されます。</li>
+	  <li>収集した個人情報は、本人の同意なく他者に渡されることはありません。</li>
+	  <li>本実験の調査結果は、学会や論文誌等で発表される予定です。</li>
+	</ol> 
+</div>
+
+<hr>
+
+<div class="form-group">
+	<div class="col-md-12 text-center">
+		<a href="subjective_main.html"><input type="submit" class="btn btn-primary mb-2" value="同意して次へ"/></a>
+	</div>
+</div>
+
+<div class="input-group mb-5">
+    &nbsp;
+</div>
+
+</body>
+</html>

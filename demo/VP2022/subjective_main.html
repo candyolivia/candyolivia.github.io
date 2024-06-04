@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Subjective Evaluation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="jumbotron text-center">
+  <h2>Subjective Evaluation</h2>
+  <hr>
+  <h3>Profile</h3> 
+</div>
+
+<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd2VvXZpWyzW9sTC21jb3VPGfCRm_7APBZrWLASGTV-x2D4Ig/formResponse?" target="hidden_iframe" onsubmit="submitted=true;" action="thank_you.html" data-toggle="validator" role="form">
+	<div class="container"> 
+		<div class="row">
+	    <div class="col">
+	    </div>
+	    <div class="col-5">
+	    	<div class="form-group">
+		      <div class="input-group mb-3">
+			    <label class="control-label col-sm-4" for="text_input">Name</label>
+			    <div class="controls col-sm-8">
+			      <input type="text" class="form-control input-md" name="entry.2019324330" id="entry.2019324330" required>
+			    </div>
+			  	</div>
+		  	</div>
+
+			<!-- Multiple Radios -->
+			<div class="form-group">
+			<div class="input-group mb-3" style="align-items: center">
+			  <label class="col-md-4 control-label" for="radios">Gender</label>
+			  <div class="col-md-4">
+			  <div class="radio">
+			    <label for="radios-0">
+			      <input type="radio" name="entry.1506343689" id="entry.1506343689" value="Male">
+			      Male
+			    </label>
+			    <label for="radios-1">
+			      <input type="radio" name="entry.1506343689" id="entry.1506343689" value="Female">
+			      Female
+			    </label>
+				</div>
+			  </div>
+			</div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			<div class="input-group mb-3">
+			  <label class="col-md-4 control-label" for="text_input">Age</label>  
+			  <div class="col-md-4">
+			  <input id="entry.281426282" name="entry.281426282" type="number" placeholder="" class="form-control input-md" required>  
+			  </div>
+			</div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			<div class="input-group mb-3">
+			  <label class="col-md-4 control-label" for="text_input">Nationality</label>  
+			  <div class="col-md-8">
+				<input id="entry.534357079" name="entry.534357079" type="text" placeholder="" class="form-control input-md" required>
+				</div>
+			</div>
+			</div>
+
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<label class="col-md-4 control-label">English Ability</label>
+					<div class="col-md-8">
+						<select name="entry.924733399" id="entry.924733399"required>
+							<option style="display:none"></option>
+							<option value="Poor">Poor</option>
+							<option value="Fair">Fair</option>
+							<option value="Good">Good</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="input-group mb-5">
+			    &nbsp;
+			</div>
+	    </div>
+	    <div class="col">
+	    </div>
+	  </div>
+		
+	</div>
+
+	<div class="jumbotron text-center">
+	  <h3>Speaker Co-occurrence Test</h3>
+	  <hr>
+	  <h5 style="color:blue;">How many speakers are speaking in this recording?</h5>
+	</div>
+	<div class="container">
+		<div class="row">
+	    <div class="col">
+	    </div>
+		<div class="col-10">
+			<!-- %%%%%%%%%%%%%%%%%%% ORIGINAL - BASELINE %%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- LIBRI-DEV -->
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">1. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/PVTSM_35/mixed_61-70970-0035.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1551014721" id="entry.1551014721" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">2. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B1a/mixed_908-31957-0009.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1384836389" id="entry.1384836389" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">3. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B2b/mixed_61-70970-0035.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1349885718" id="entry.1349885718" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">4. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B2b/mixed_1221-135767-0010.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1809119361" id="entry.1809119361" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">5. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B1a/mixed_p226_015_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.774385458" id="entry.774385458" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">6. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B2b/mixed_p225_016_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.928164674" id="entry.928164674" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">7. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/PVTSM_35/mixed_1580-141084-0029.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.303188311" id="entry.303188311" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">8. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/TDPSOLA_35/mixed_61-70970-0035.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.27847921" id="entry.27847921" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">9. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B2b/mixed_1580-141084-0029.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.13552013" id="entry.13552013" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">10. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B1a/mixed_p254_005_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1094673966" id="entry.1094673966" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">11. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B1a/mixed_p254_019_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.814186580" id="entry.814186580" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">12. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/PVTSM_35/mixed_p225_016_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1890216553" id="entry.1890216553" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">13. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/PVTSM_35/mixed_p239_005_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1290171989" id="entry.1290171989" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">14. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/PVTSM_35/mixed_p254_005_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1719598905" id="entry.1719598905" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">15. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B1a/mixed_1221-135767-0010.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1471891978" id="entry.1471891978" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">16. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/TDPSOLA_35/mixed_p239_005_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1436394112" id="entry.1436394112" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">17. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B1a/mixed_p239_019_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.2088957197" id="entry.2088957197" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">18. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/TDPSOLA_35/mixed_p254_005_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1285240643" id="entry.1285240643" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">19. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B2b/mixed_p239_019_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1302712470" id="entry.1302712470" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">20. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/PVTSM_35/mixed_p239_019_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.814580809" id="entry.814580809" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">21. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B2b/mixed_p239_005_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.848038525" id="entry.848038525" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">22. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/TDPSOLA_35/mixed_p239_019_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1704094968" id="entry.1704094968" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">23. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B2b/mixed_p254_005_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1224597309" id="entry.1224597309" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">24. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B2b/mixed_p254_019_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.350756696" id="entry.350756696" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">25. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B1a/mixed_p225_016_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.965353732" id="entry.965353732" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">26. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B1a/mixed_61-70970-0035.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.699868119" id="entry.699868119" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">27. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/TDPSOLA_35/mixed_p254_019_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.647566615" id="entry.647566615" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">28. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/TDPSOLA_35/mixed_1580-141084-0029.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.615030946" id="entry.615030946" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">29. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/TDPSOLA_35/mixed_p225_016_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.236313184" id="entry.236313184" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">30. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/TDPSOLA_35/mixed_p226_015_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1068276490" id="entry.1068276490" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">31. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/PVTSM_35/mixed_908-31957-0009.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.296077160" id="entry.296077160" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">32. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/TDPSOLA_35/mixed_1221-135767-0010.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1488518929" id="entry.1488518929" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">33. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B2b/mixed_908-31957-0009.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.53492497" id="entry.53492497" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">34. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/PVTSM_35/mixed_1221-135767-0010.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1208806157" id="entry.1208806157" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">35. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B1a/mixed_p239_005_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.1571167261" id="entry.1571167261" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">36. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B2b/mixed_p226_015_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.2034461985" id="entry.2034461985" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">37. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/TDPSOLA_35/mixed_908-31957-0009.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.489779441" id="entry.489779441" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">38. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/B1a/mixed_1580-141084-0029.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.514413426" id="entry.514413426" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">39. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/PVTSM_35/mixed_p226_015_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.62087076" id="entry.62087076" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+		  	<hr>
+
+		  	<!-- ONE TEST -->
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-6">
+						<label style="font-size:150%;vertical-align: top;">40. &thinsp; </label> 
+						<audio controls style="width: 80%;">
+							<source src="sounds/PVTSM_35/mixed_p254_019_mic2.wav" type="audio/wav">
+						</audio>
+					</div>
+					<label class="control-label col-sm-3" for="s1">Number of Speakers</label>
+					<div class="controls col-sm-3">
+						<select name="entry.184521501" id="entry.184521501" required>
+							<option style="display:none"></option>
+							<option value=1>Definitely 1</option>
+							<option value=2>Probably 1</option>
+							<option value=3>Not sure</option>
+							<option value=4>Probably 2</option>
+							<option value=5>Definitely 2</option>
+						</select>
+					</div>
+				</div>
+		  	</div>
+
+			<div class="input-group mb-5">
+			    &nbsp;
+			</div>
+
+			<div class="form-group">
+				<div class="col-md-12 text-center">
+					<input type="submit" class="btn btn-primary mb-2" value="Submit"/>
+				</div>
+			</div>
+
+	    </div>
+	    <div class="col">
+	    </div>
+	  </div>
+	</div>
+</form>
+</body>
+
+<script>
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyjWRFuF69JqUE6G4jDuhL4z2udjVY7f8AkhGq8nx-N2p7gxFM/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+      window.location.href = 'thank_you.html';
+  })
+
+</script>
+
+
+</html>

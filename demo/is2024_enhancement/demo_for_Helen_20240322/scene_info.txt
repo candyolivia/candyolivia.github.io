@@ -1,0 +1,106 @@
+{
+    "dataset": "dev",
+    "room": "R08244",
+    "scene": "S08244",
+    "target": {
+      "name": "T033_EWC_01893",
+      "time_start": 85506,
+      "time_end": 229713
+    },
+    "duration": 273813,
+    "interferers": [
+      {
+        "position": 1,
+        "time_start": 0,
+        "time_end": 273813,
+        "type": "speech",
+        "name": "som_00712.wav",
+        "offset": 2104247
+      },
+      {
+        "position": 2,
+        "time_start": 0,
+        "time_end": 273813,
+        "type": "music",
+        "name": "18/1364318.low.mp3",
+        "offset": 577645
+      }
+    ],
+    "SNR": -10.8068,
+    "listener": {
+      "rotation": [
+        {
+          "sample": 81373.9621,
+          "angle": 54.8252
+        },
+        {
+          "sample": 89556.9621,
+          "angle": 73.9499
+        }
+      ],
+      "hrir_filename": [
+        "VP_E4-ED",
+        "VP_E4-BTE_fr",
+        "VP_E4-BTE_mid",
+        "VP_E4-BTE_rear"
+      ]
+    }
+  },
+  
+ {
+    "dataset": "dev",
+    "room": "R08248",
+    "scene": "S08248",
+    "target": {
+      "name": "T017_G2B_02006",
+      "time_start": 84848,
+      "time_end": 225086
+    },
+    "duration": 269186,
+    "interferers": [
+      {
+        "position": 1,
+        "time_start": 0,
+        "time_end": 269186,
+        "type": "music",
+        "name": "01/604701.low.mp3",
+        "offset": 2193848
+      },
+      {
+        "position": 2,
+        "time_start": 0,
+        "time_end": 269186,
+        "type": "noise",
+        "name": "CIN_microwave_006.wav",
+        "offset": 1497449
+      },
+      {
+        "position": 3,
+        "time_start": 0,
+        "time_end": 269186,
+        "type": "speech",
+        "name": "irm_03397.wav",
+        "offset": 24558709
+      }
+    ],
+    "SNR": -10.6636,
+    "listener": {
+      "rotation": [
+        {
+          "sample": 119397.3743,
+          "angle": 56.5110
+        },
+        {
+          "sample": 127601.3743,
+          "angle": 73.7748
+        }
+      ],
+      "hrir_filename": [
+        "BuK-ED",
+        "BuK-BTE_fr",
+        "BuK-BTE_mid",
+        "BuK-BTE_rear"
+      ]
+    }
+  }
+  

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Demonstration: Deep Learning-Based Speech Enhancement</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="jumbotron text-center">
+	  <h3>Are Recent Deep Learning-Based Speech Enhancement Methods Ready to Confront Real-World Noisy Environments?</h3>
+	  <h4>Paper link: <a href="TBD"> TBD</a></h4>
+	  <h4>Github page: <a href="https://github.com/candyolivia/is2024_deep_enhancement"> https://github.com/candyolivia/is2024_deep_enhancement</a></h4>
+	  <hr>
+	  <h5>Candy Olivia Mawalim, Shogo Okada, and Masashi Unoki</h5>
+	  <h5>Japan Advanced Institute of Science and Technology</h5>
+	</div>
+	<div class="container">
+		<div class="row">
+	    <div class="col">
+	    </div>
+		<div class="col-12 text-center">
+			<label style="font-size:150%;vertical-align: top;"><strong>Samples:</strong> CEC2 Development Set (CH1)</label> <br>
+			<hr>
+
+			<label style="font-size:100%;vertical-align: top;"><strong>Unprocessed Data:</strong> Development Set Mix</label>
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						S06022_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						S06088_mix_CH1
+					</div>
+					<div class="controls col-sm-4">
+						S06221_mix_CH1
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/S06022_mix_CH1.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/S06088_mix_CH1.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/S06221_mix_CH1.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>DeepFilterNet3 (Fine-tune)</strong></label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						S06022_mix_CH1_DeepFilterNet3
+					</div>
+					<div class="controls col-sm-4">
+						S06088_mix_CH1_DeepFilterNet3
+					</div>
+					<div class="controls col-sm-4">
+						S06221_mix_CH1_DeepFilterNet3
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/S06022_mix_CH1_DeepFilterNet3.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/S06088_mix_CH1_DeepFilterNet3.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/S06221_mix_CH1_DeepFilterNet3.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+				<label style="font-size:100%;vertical-align: top;"><strong>Denoiser (H=48)</strong></label>
+
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						S06022_mix_CH1_denoiser48
+					</div>
+					<div class="controls col-sm-4">
+						S06088_mix_CH1_denoiser48
+					</div>
+					<div class="controls col-sm-4">
+						S06221_mix_CH1_denoiser48
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/S06022_mix_CH1_denoiser48.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/S06088_mix_CH1_denoiser48.wav" type="audio/wav">
+						</audio>
+					</div>
+					<div class="controls col-sm-4">
+						<audio controls style="width: 80%;">
+							<source src="sounds/S06221_mix_CH1_denoiser48.wav" type="audio/wav">
+						</audio>
+					</div>
+				</div>
+
+				<hr>
+
+		  	</div>
+
+			<div class="input-group mb-5">
+			    &nbsp;
+			</div>
+
+	    </div>
+	    <div class="col">
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>

@@ -149,20 +149,18 @@
         <div id="anonymizeInfo"></div>
                 
       </div>
-    </div>
 
-    <div class="aspect-section">
-        <div>
-            <strong>Aspect:</strong><br>
-            Click button below for more detail assessment
-        </div>
-        <div class="aspect-labels">
-            <div class="aspect-box range">Range<br>3.6</div>
-            <div class="aspect-box accuracy">Accuracy<br>2.5</div>
-            <div class="aspect-box fluency">Fluency<br>2</div>
-            <div class="aspect-box interaction">Interaction<br>4</div>
-            <div class="aspect-box coherence">Coherence<br>3</div>
-        </div>
+      <div class="clearfix" align="center">
+          <strong>Aspect:</strong><br>
+          Click button below for more detail assessment
+      </div>
+      <div class="aspect-labels" align="center">
+          <div class="aspect-box range">Range<br>3.6</div>
+          <div class="aspect-box accuracy">Accuracy<br>2.5</div>
+          <div class="aspect-box fluency">Fluency<br>2</div>
+          <div class="aspect-box interaction">Interaction<br>4</div>
+          <div class="aspect-box coherence">Coherence<br>3</div>
+      </div>
     </div>
 
     <div class="overall-score">Overall Score: 3.5-4</div>
@@ -294,7 +292,7 @@
             const anonymizeOption = localStorage.getItem('anonymizeOption');
 
             if (videoURL) {
-                videoPlayer.src = "https://youtu.be/GZlZFXaIcso";
+                videoPlayer.src = videoURL;
             } else {
                 window.location.href = 'novideo.html';
             }

@@ -23,6 +23,45 @@
             margin-bottom: 20px;
             border: 1px solid #ccc;
         }
+        .aspect-section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .aspect-labels {
+            display: flex;
+            gap: 10px;
+        }
+        .aspect-box {
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .range { background-color: #FFFACD; border: 1px solid #EEE8AA; }
+        .accuracy { background-color: #90EE90; border: 1px solid #8FBC8F; }
+        .fluency { background-color: #E6E6FA; border: 1px solid #D8BFD8; }
+        .interaction { background-color: #FFDAB9; border: 1px solid #F4A460; }
+        .coherence { background-color: #F08080; border: 1px solid #CD5C5C; }
+        .overall-score {
+            font-weight: bold;
+        }
+        .feedback-box {
+            border: 1px solid lightskyblue;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .detail-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .detail-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -103,34 +142,38 @@
 
     <div class="card mt-3 p-3">
       <h3 class="card-title">Predicted SEE Score Assessment</h3>
+      <hr>
       <div>
 
-        <ul class="card-text font-weight-light list-group list-group-flush">
-        
-          <li class="list-group-item">
-            <div class="row">
-              
-              <div class="col-xs-2 cl-sm-2 col-md-auto text-left" style="width: 130px;">
-                <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="width: 130px;">
-                  Overall Score:
-                </span>
-                <span>
-                  3.5~4
-                </span>
-              </div>
-              
-              <div class="col-xs-10 cl-sm-10 col-md mt-2 mt-md-0">
-               <video id="uploadedVideo" controls></video>
-                <div id="anonymizeInfo"></div>
-                <p><a href="index.html">Upload another video</a></p>
+       <video id="uploadedVideo" controls></video>
+        <div id="anonymizeInfo"></div>
                 
-              </div>
-            </div>
-          </li>
-        
-        </ul>
-
       </div>
+    </div>
+
+    <div class="aspect-section">
+        <div>
+            <strong>Aspect:</strong><br>
+            Click button below for more detail assessment
+        </div>
+        <div class="aspect-labels">
+            <div class="aspect-box range">Range<br>3.6</div>
+            <div class="aspect-box accuracy">Accuracy<br>2.5</div>
+            <div class="aspect-box fluency">Fluency<br>2</div>
+            <div class="aspect-box interaction">Interaction<br>4</div>
+            <div class="aspect-box coherence">Coherence<br>3</div>
+        </div>
+    </div>
+
+    <div class="overall-score">Overall Score: 3.5-4</div>
+
+    <div class="feedback-box">
+        <strong>General Feedback:</strong><br>
+        According to the aspect 1, you need to improve bla bla bla...
+    </div>
+
+    <div>
+      <p><a href="index.html">Upload another video</a></p>
     </div>
 
 
@@ -247,7 +290,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             const videoPlayer = document.getElementById('uploadedVideo');
             const anonymizeInfoDiv = document.getElementById('anonymizeInfo');
-            const videoURL = localStorage.getItem('videoURL');
+            const videoURL = localStorage.getItem('https://youtu.be/GZlZFXaIcso');
             const anonymizeOption = localStorage.getItem('anonymizeOption');
 
             if (videoURL) {

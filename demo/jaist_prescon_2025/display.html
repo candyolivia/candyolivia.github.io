@@ -290,11 +290,11 @@
         document.addEventListener('DOMContentLoaded', function() {
             const videoPlayer = document.getElementById('uploadedVideo');
             const anonymizeInfoDiv = document.getElementById('anonymizeInfo');
-            const videoURL = localStorage.getItem('https://youtu.be/GZlZFXaIcso');
+            const videoURL = localStorage.getItem('videoURL');
             const anonymizeOption = localStorage.getItem('anonymizeOption');
 
             if (videoURL) {
-                videoPlayer.src = videoURL;
+                videoPlayer.src = "https://youtu.be/GZlZFXaIcso";
             } else {
                 window.location.href = 'novideo.html';
             }

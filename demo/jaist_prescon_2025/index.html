@@ -134,8 +134,9 @@
           <label for="anonymize">Anonymize Video</label>
       </div>
 
-      <button onclick="uploadVideo()">Upload</button>
+      <button onclick="startUpload()">Upload</button>
       <div id="uploadStatus"></div>
+      <div id="loadingMessage" style="display:none;">Processing, please wait...</div>
       
     </div>
 
@@ -213,27 +214,32 @@
   </script>
 
   <script>
-      function uploadVideo() {
-          const fileInput = document.getElementById('videoFile');
-          const anonymizeCheckbox = document.getElementById('anonymize');
-          const file = fileInput.files[0];
-          const anonymize = anonymizeCheckbox.checked;
+      function startUpload() {
+            const fileInput = document.getElementById('videoFile');
+            const file = fileInput.files[0];
 
-          if (!file) {
-              document.getElementById('uploadStatus').textContent = "Please select a video file.";
-              return;
-          }
+            if (!file) {
+                document.getElementById('uploadStatus').textContent = "Please select a video file.";
+                return;
+            }
 
-          // For this client-side example, we'll directly display the video
-          // on a new "display.html" page. In a real application, you'd likely
-          // upload to a server and then the server would serve the video.
+            document.getElementById('uploadStatus').textContent = "";
+            document.getElementById('loadingMessage').style.display = 'block';
+            setTimeout(uploadVideo, 1500); // Simulate a 1.5 second loading time
+        }
 
-          const videoURL = URL.createObjectURL(file);
-          localStorage.setItem('videoURL', videoURL); // Store the URL temporarily
-          localStorage.setItem('anonymizeOption', anonymize); // Store the anonymize option
+        function uploadVideo() {
+            const fileInput = document.getElementById('videoFile');
+            const anonymizeCheckbox = document.getElementById('anonymize');
+            const file = fileInput.files[0];
+            const anonymize = anonymizeCheckbox.checked;
 
-          window.location.href = 'display.html';
-      }
+            const videoURL = URL.createObjectURL(file);
+            localStorage.setItem('videoURL', videoURL);
+            localStorage.setItem('anonymizeOption', anonymize);
+
+            window.location.href = 'display.html';
+        }
   </script>
 
   <!-- Code Syntax Highlighting -->

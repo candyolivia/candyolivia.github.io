@@ -101,10 +101,10 @@
     <p><br /></p>
 
     <h3>Predicted SEE Score Assessment</h3>
+
+
     <div class="card mt-3 p-3">
-        <video id="uploadedVideo" controls></video>
-        <div id="anonymizeInfo"></div>
-        <p><a href="index.html">Upload another video</a></p>
+        <h1>Error: No video to display.</h1><p><a href="index.html">Go back to upload</a></p>
     </div>
 
     <p><br /></p>
@@ -215,32 +215,6 @@
     ga('create', 'UA-54519238-1', 'auto');
     ga('send', 'pageview');
   </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const videoPlayer = document.getElementById('uploadedVideo');
-            const anonymizeInfoDiv = document.getElementById('anonymizeInfo');
-            const videoURL = localStorage.getItem('videoURL');
-            const anonymizeOption = localStorage.getItem('anonymizeOption');
-
-            if (videoURL) {
-                videoPlayer.src = videoURL;
-            } else {
-                window.location.href = 'novideo.html';
-            }
-
-            if (anonymizeOption === 'true') {
-                anonymizeInfoDiv.textContent = "Anonymization was requested.";
-                // In a real scenario, the displayed video would be the anonymized version
-            } else if (anonymizeOption === 'false') {
-                anonymizeInfoDiv.textContent = "Anonymization was not requested.";
-            }
-
-            // Clean up the stored items
-            localStorage.removeItem('videoURL');
-            localStorage.removeItem('anonymizeOption');
-        });
-    </script>
 
 </body>
 </html>

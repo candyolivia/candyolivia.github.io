@@ -23,15 +23,6 @@
             margin-bottom: 20px;
             border: 1px solid #ccc;
         }
-        .aspect-section {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .aspect-labels {
-            display: flex;
-            gap: 10px;
-        }
         .aspect-box {
             padding: 10px 15px;
             border-radius: 5px;
@@ -143,23 +134,20 @@
     <div class="card mt-3 p-3">
       <center><span class="font-weight-bold"><h4 class="card-title">Predicted SEE Score Assessment</h4></span></center>
       <hr>
-      <div>
-
-       <video id="uploadedVideo" controls></video>
-        <div id="anonymizeInfo"></div>
+      <video id="uploadedVideo" controls></video>
+      <div id="anonymizeInfo"></div>
                 
-      </div>
 
       <div class="clearfix" align="center">
-          <strong>Aspect:</strong><br>
+        <span class="font-weight-bold"><h4 class="card-title">Aspect:</h4></span>
           Click button below for more detail assessment
       </div>
-      <div class="aspect-labels" align="center">
-          <div class="aspect-box range">Range<br>3.6</div>
-          <div class="aspect-box accuracy">Accuracy<br>2.5</div>
-          <div class="aspect-box fluency">Fluency<br>2</div>
-          <div class="aspect-box interaction">Interaction<br>4</div>
-          <div class="aspect-box coherence">Coherence<br>3</div>
+      <div class="row" align="center">
+          <div class="col-sm-2 range">Range<br>3.6</div>
+          <div class="col-sm-2 accuracy">Accuracy<br>2.5</div>
+          <div class="col-sm-2 fluency">Fluency<br>2</div>
+          <div class="col-sm-2 interaction">Interaction<br>4</div>
+          <div class="col-sm-2 coherence">Coherence<br>3</div>
       </div>
     </div>
 

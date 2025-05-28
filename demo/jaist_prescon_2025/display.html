@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploaded Video</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        video {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Uploaded Video</h1>
+    <video id="uploadedVideo" controls></video>
+    <div id="anonymizeInfo"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoPlayer = document.getElementById('uploadedVideo');
+            const anonymizeInfoDiv = document.getElementById('anonymizeInfo');
+            const videoURL = localStorage.getItem('videoURL');
+            const anonymizeOption = localStorage.getItem('anonymizeOption');
+
+            if (videoURL) {
+                videoPlayer.src = videoURL;
+            } else {
+                document.body.innerHTML = '<h1>Error: No video to display.</h1><p><a href="index.html">Go back to upload</a></p>';
+            }
+
+            if (anonymizeOption === 'true') {
+                anonymizeInfoDiv.textContent = "Anonymization was requested.";
+                // In a real scenario, the displayed video would be the anonymized version
+            } else if (anonymizeOption === 'false') {
+                anonymizeInfoDiv.textContent = "Anonymization was not requested.";
+            }
+
+            // Clean up the stored items
+            localStorage.removeItem('videoURL');
+            localStorage.removeItem('anonymizeOption');
+        });
+    </script>
+    <p><a href="index.html">Upload another video</a></p>
+</body>
+</html>

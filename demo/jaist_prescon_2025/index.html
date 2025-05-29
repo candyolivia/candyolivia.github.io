@@ -191,7 +191,7 @@
 
     </div>
 
-    <div>
+    <div id="uploadAgain" style="display:none;">
       <p><a href="index.html">Upload another video</a></p>
     </div>
 
@@ -317,6 +317,7 @@
               const videoURL = URL.createObjectURL(file);
                 videoPlayer.src = videoURL;
                 assessment.style.display = 'block';
+                uploadAgain.style.display = 'block';
                 videoPlayer.style.display = 'block'; // Show the video player
                 selectFile.style.display = 'none';
 

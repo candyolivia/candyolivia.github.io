@@ -17,12 +17,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
     <style>
-        video {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-        }
         .aspect-box {
             padding: 10px 15px;
             border-radius: 5px;
@@ -136,25 +130,21 @@
       <hr>
 
       <div class="row">
-        <div class="col-sm-9">
-          <video id="uploadedVideo" controls></video>
+        <div class="col-sm-8">
+          <video width="100%" id="uploadedVideo" controls></video>
           <div id="anonymizeInfo"></div>
         </div>
                   
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <div class="clearfix" align="center">
             <span class="font-weight-bold"><h4 class="card-title">Aspect:</h4></span>
               <a href="">More detail assessment</a>
           </div>
-          <div class="row" align="center">
-              <div class="col-sm-1"></div>
-              <div class="col-sm-2 range">Range<br>3.5</div>
-              <div class="col-sm-2 accuracy">Accuracy<br>3.1</div>
-              <div class="col-sm-2 fluency">Fluency<br>3.6</div>
-              <div class="col-sm-2 interaction">Interaction<br>3.6</div>
-              <div class="col-sm-2 coherence">Coherence<br>3.8</div>
-              <div class="col-sm-1"></div>
-          </div>
+          <div class="row range" align="center">Range<br>3.5</div>
+          <div class="row accuracy" align="center">Accuracy<br>3.1</div>
+          <div class="row fluency" align="center">Fluency<br>3.6</div>
+          <div class="row interaction" align="center">Interaction<br>3.6</div>
+          <div class="row coherence" align="center">Coherence<br>3.8</div>
         </div>
       </div>
 

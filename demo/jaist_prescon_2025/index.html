@@ -138,16 +138,15 @@
 
     <div id="selectFile" style="display:block;" class="card mt-3 p-3">
       <center><h4 class="card-title"><label for="videoFile"><b>Select Video:</b></label></h4></center>
-      <input type="file" id="videoInput" accept="video/*">
-
-      </center><div>
+      <center><input type="file" id="videoInput" accept="video/*"></center>
+      <div align="center">
           <input type="checkbox" id="anonymize" name="anonymize">
           <label for="anonymize">Anonymize Video</label>
       </div></center>
 
-      <button onclick="startUpload()">Upload</button>
+      <center><button onclick="startUpload()">Upload</button></center>
       <div id="uploadStatus"></div>
-      <div id="loadingMessage" style="display:none;">Processing, please wait...</div>
+      <div id="loadingMessage" style="display:none;" align="center">Processing, please wait...</div>
       
     </div>
 

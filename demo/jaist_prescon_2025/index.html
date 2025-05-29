@@ -1,37 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press Conference Demonstration 2025</title>
+    <meta name="description" content="Press Conference Demonstration 2025">
 
-  <title>Press Conference Demonstration 2025</title>
-  <meta name="description" content="Press Conference Demonstration 2025">
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" />
 
-  <!-- Fonts and Icons -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/academicons.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="/teaching/">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="/assets/css/all.min.css">
-  <link rel="stylesheet" href="/assets/css/academicons.min.css">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/teaching/">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-
-  <style>
-        body {
-            font-family: sans-serif;
-            margin: 20px;
+    <style>
+        .aspect-box {
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-align: center;
         }
-        .upload-section {
-            margin-bottom: 20px;
+        .range { background-color: #FFFACD; border: 1px solid #EEE8AA; }
+        .accuracy { background-color: #90EE90; border: 1px solid #8FBC8F; }
+        .fluency { background-color: #E6E6FA; border: 1px solid #D8BFD8; }
+        .interaction { background-color: #FFDAB9; border: 1px solid #F4A460; }
+        .coherence { background-color: #F08080; border: 1px solid #CD5C5C; }
+        .overall-score {
+            font-weight: bold;
+        }
+        .feedback-box {
+            border: 1px solid lightskyblue;
             padding: 15px;
-            border: 1px solid #ccc;
             border-radius: 5px;
         }
-        input[type="file"] {
-            display: block;
-            margin-bottom: 10px;
+        .detail-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
         }
+        .detail-button:hover {
+            background-color: #0056b3;
+        }
+
         button {
             padding: 10px 15px;
             background-color: #007bff;
@@ -43,14 +59,9 @@
         button:hover {
             background-color: #0056b3;
         }
-        #uploadStatus {
-            margin-top: 10px;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
-
 
  <!-- Header -->
   <nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
@@ -125,9 +136,9 @@
 
     <p><br /></p>
 
-    <div class="card mt-3 p-3">
+    <div id="selectFile" style="display:block;" class="card mt-3 p-3">
       <center><h4 class="card-title"><label for="videoFile"><b>Select Video:</b></label></h4></center>
-      <input type="file" id="videoFile" accept="video/*">
+      <input type="file" id="videoInput" accept="video/*">
 
       </center><div>
           <input type="checkbox" id="anonymize" name="anonymize">
@@ -139,6 +150,51 @@
       <div id="loadingMessage" style="display:none;">Processing, please wait...</div>
       
     </div>
+
+
+    <div id="assessment" style="display:none;" class="card mt-3 p-3">
+      <center><span class="font-weight-bold"><h4 class="card-title">Predicted SEE Score Assessment</h4></span></center>
+      <hr>
+
+      <div class="row">
+        <div class="col-sm-8">
+          <video width="100%" id="videoPlayer" controls></video>
+          <div id="anonymizeInfo"></div>
+        </div>
+                  
+        <div class="col-sm-4">
+          <div class="clearfix" align="center">
+            <span class="font-weight-bold"><h4 class="card-title">Aspect:</h4></span>
+              <a href="">More detail assessment</a>
+          </div>
+          <div class="range font-weight-bold" align="center">Range<br>3.5</div>
+          <div class="accuracy font-weight-bold" align="center">Accuracy<br>3.1</div>
+          <div class="fluency font-weight-bold" align="center">Fluency<br>3.6</div>
+          <div class="interaction font-weight-bold" align="center">Interaction<br>3.6</div>
+          <div class="coherence font-weight-bold" align="center">Coherence<br>3.8</div>
+        </div>
+      </div>
+
+      <hr>
+
+      <center><span class="font-weight-bold"><h5>Overall Score: 3.5</h5></span></center>
+
+      <div class="feedback-box">
+          <strong>General Feedback:</strong><br>
+          <p>Overall, you demonstrate a solid foundation in English communication. Your strengths appear to lie in coherence (3.8) and interaction (3.6), indicating that you can generally structure your thoughts logically and engage comfortably in conversation. Your fluency (3.6) is also a positive aspect, suggesting a good level of fluidity and natural intonation.</p>
+
+          <p>However, there are areas where you have room to grow. Your accuracy score of 3.1 suggests that grammatical precision could be improved. Additionally, your range score of 3.5 indicates that expanding your vocabulary and exploring more varied phrasing could enhance your expressiveness. </p>
+
+          <p>(Feedback is generated using the Gemini 2.5 flash model)</p>
+
+      </div>
+
+    </div>
+
+    <div>
+      <p><a href="index.html">Upload another video</a></p>
+    </div>
+
 
     <p><br /></p>
 
@@ -213,35 +269,6 @@
     });
   </script>
 
-  <script>
-      function startUpload() {
-            const fileInput = document.getElementById('videoFile');
-            const file = fileInput.files[0];
-
-            if (!file) {
-                document.getElementById('uploadStatus').textContent = "Please select a video file.";
-                return;
-            }
-
-            document.getElementById('uploadStatus').textContent = "";
-            document.getElementById('loadingMessage').style.display = 'block';
-            setTimeout(uploadVideo, 1500); // Simulate a 1.5 second loading time
-        }
-
-        function uploadVideo() {
-            const fileInput = document.getElementById('videoFile');
-            const anonymizeCheckbox = document.getElementById('anonymize');
-            const file = fileInput.files[0];
-            const anonymize = anonymizeCheckbox.checked;
-
-            const videoURL = URL.createObjectURL(file);
-            localStorage.setItem('videoURL', videoURL);
-            localStorage.setItem('anonymizeOption', anonymize);
-
-            window.location.href = 'display.html';
-        }
-  </script>
-
   <!-- Code Syntax Highlighting -->
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
   <script src="/assets/js/highlight.pack.js"></script>
@@ -261,13 +288,6 @@
     });
   </script>
 
-  <!-- Enable Tooltips -->
-  <script type="text/javascript">
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
-  </script>
-
   <!-- Google Analytics -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -278,5 +298,41 @@
     ga('send', 'pageview');
   </script>
 
+  <script>
+      function startUpload() {
+            document.getElementById('uploadStatus').textContent = "";
+            document.getElementById('loadingMessage').style.display = 'block';
+            setTimeout(uploadVideo, 1500); // Simulate a 1.5 second loading time
+
+        }
+
+        function uploadVideo() {
+            const fileInput = document.getElementById('videoInput');
+            const anonymizeCheckbox = document.getElementById('anonymize');
+            const anonymizeOption = anonymizeCheckbox.checked;
+            const anonymizeInfoDiv = document.getElementById('anonymizeInfo');
+            const file = fileInput.files[0];
+
+            if (file) {
+              const videoURL = URL.createObjectURL(file);
+                videoPlayer.src = videoURL;
+                assessment.style.display = 'block';
+                videoPlayer.style.display = 'block'; // Show the video player
+                selectFile.style.display = 'none';
+
+            }
+            else{
+                document.getElementById('uploadStatus').textContent = "Please select a video file.";
+                window.location.href = 'novideo.html';
+            }
+
+            if (anonymizeOption === 'true') {
+                anonymizeInfoDiv.textContent = "Anonymization was requested.";
+                // In a real scenario, the displayed video would be the anonymized version
+            } else if (anonymizeOption === 'false') {
+                anonymizeInfoDiv.textContent = "Anonymization was not requested.";
+            }
+        }
+  </script>
 </body>
 </html>

@@ -137,22 +137,22 @@
     <p><br /></p>
 
     <div id="selectFile" style="display:block;" class="card mt-3 p-3">
-      <center><h4 class="card-title"><label for="videoFile"><b>Select Video:</b></label></h4></center>
+      <center><h4 class="card-title"><label for="videoFile"><b>動画入力:</b></label></h4></center>
       <center><input type="file" id="videoInput" accept="video/*"></center>
       <div align="center">
           <input type="checkbox" id="anonymize" name="anonymize">
-          <label for="anonymize">Anonymize Video</label>
+          <label for="anonymize">動画を匿名化する</label>
       </div></center>
 
-      <center><button onclick="startUpload()">Upload</button></center>
+      <center><button onclick="startUpload()">アップロード</button></center>
       <div id="uploadStatus"></div>
-      <div id="loadingMessage" style="display:none;" align="center">Processing, please wait...</div>
+      <div id="loadingMessage" style="display:none;" align="center">処理中です。しばらくお待​​ちください...</div>
       
     </div>
 
 
     <div id="assessment" style="display:none;" class="card mt-3 p-3">
-      <center><span class="font-weight-bold"><h4 class="card-title">Predicted SEE Score Assessment</h4></span></center>
+      <center><span class="font-weight-bold"><h4 class="card-title">予測SEEスコア評価</h4></span></center>
       <hr>
 
       <div class="row">
@@ -163,35 +163,35 @@
                   
         <div class="col-sm-4">
           <div class="clearfix" align="center">
-            <span class="font-weight-bold"><h4 class="card-title">Aspect:</h4></span>
-              <a href="detail.html">More detailed assessment</a>
+            <span class="font-weight-bold"><h4 class="card-title">側面：</h4></span>
+              <a href="detail.html">詳細な評価</a>
           </div>
-          <div class="range font-weight-bold" align="center">Range<br>3.5</div>
-          <div class="accuracy font-weight-bold" align="center">Accuracy<br>3.1</div>
-          <div class="fluency font-weight-bold" align="center">Fluency<br>3.6</div>
-          <div class="interaction font-weight-bold" align="center">Interaction<br>3.6</div>
-          <div class="coherence font-weight-bold" align="center">Coherence<br>3.8</div>
+          <div class="range font-weight-bold" align="center">広範性<br>3.5</div>
+          <div class="accuracy font-weight-bold" align="center">正確さ<br>3.1</div>
+          <div class="fluency font-weight-bold" align="center">流暢さ<br>3.6</div>
+          <div class="interaction font-weight-bold" align="center">相互作用<br>3.6</div>
+          <div class="coherence font-weight-bold" align="center">一貫性<br>3.8</div>
         </div>
       </div>
 
       <hr>
 
-      <center><span class="font-weight-bold"><h5>Overall Score: 3.5</h5></span></center>
+      <center><span class="font-weight-bold"><h5>総合評価: 3.5</h5></span></center>
 
       <div class="feedback-box">
-          <strong>General Feedback:</strong><br>
-          <p>Overall, you demonstrate a solid foundation in English communication. Your strengths appear to lie in coherence (3.8) and interaction (3.6), indicating that you can generally structure your thoughts logically and engage comfortably in conversation. Your fluency (3.6) is also a positive aspect, suggesting a good level of fluidity and natural intonation.</p>
+          <strong>フィードバック:</strong><br>
+          <p>全体的に見て、あなたは英語でのコミュニケーションにおいて確固たる基盤を築いています。あなたの強みは、一貫性（3.8）と相互作用（3.6）にあるようです。これは、あなたが概して論理的に思考を組み立て、会話にスムーズに参加できることを示しています。流暢さ（3.6）もまたプラスの要素であり、良好な流暢さと自然なイントネーションを示唆しています。</p>
 
-          <p>However, there are areas where you have room to grow. Your accuracy score of 3.1 suggests that grammatical precision could be improved. Additionally, your range score of 3.5 indicates that expanding your vocabulary and exploring more varied phrasing could enhance your expressiveness. </p>
+          <p>しかし、まだ成長の余地があります。正確性スコアは3.1で、文法の正確性をさらに向上させる必要があることを示しています。また、語学力スコアは3.5で、語彙を増やし、より多様な表現を試すことで、表現力を高めることができることを示しています。 </p>
 
-          <p>(Feedback is generated using the Gemini 2.5 flash model)</p>
+          <p>(フィードバックはGemini 2.5フラッシュモデルを使用して生成されます)</p>
 
       </div>
 
     </div>
 
     <div id="uploadAgain" style="display:none;">
-      <p><a href="index.html">Upload another video</a></p>
+      <p><a href="index.html">別の動画をアップロードする</a></p>
     </div>
 
 

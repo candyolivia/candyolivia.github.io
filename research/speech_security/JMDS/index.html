@@ -151,7 +151,31 @@
       <div>
         <p>(ver202601)</p>
 
-        <p>Download the dataset <a href="">here</a>. Note that only generated data is available. [Google Drive link, zip 3.5 GB]</p>
+        <p>Download the JMDS-Open dataset <a href="">here</a>. Note that only generated data is available. [Google Drive link, zip 3.5 GB]</p>
+
+        <p>More information: <a href="https://drive.google.com/file/d/1-dyX2Ucl9n-zP4dUh0RSKgEjQsx6CT5Z/view?usp=sharing">README.md</a></p>
+      </div>
+    </div>
+
+    <div class="card mt-3 p-3">
+      <h3 class="card-title"><b>Description</b></h3>
+      <hr>
+      <div>
+        <p> This dataset contains generated (synthetic) speech across 15 languages, designed for benchmarking audio deepfake detection and synthetic speech identification systems. The languages covered in this paper are: English, Mandarin (Chinese), Hindi, Italian, Arabic, Spanish, Polish, German, French, Russian, Portuguese, Japanese, Ukrainian, Vietnamese, and Thai.</p> 
+
+        <p> Metadata (CM Protocols)</p>
+        <p>The CSV files in the cm_protocols folder define the data splits. Each file contains the following columns: </p>
+        <ol>
+         <li> spk_id: Anonymized speaker identifier.</li>
+         <li> utt_id: Unique utterance identifier (matches the filename in the dataset/ folder).
+         <li> gender: Speaker gender (M/F/Unk).
+         <li> codec: Audio encoding format (e.g., wav).
+         <li> attack_id: The specific generation/synthesis method used.</li>
+         <li> label: Set to pristine or generated.</li>
+         <li> language: ISO 639-3 language code (e.g., jpn, por, eng).</li>
+         <li> dataset: Source dataset origin.</li>
+         <li> duration: Duration of the audio file in seconds.</li>
+        </ol>
       </div>
     </div>
 
@@ -163,8 +187,13 @@
 
         <p> Due to redistribution restrictions on certain pristine datasets, we recommend following the data curation process outlined in our paper.</p> 
 
-        <p>We have provided a sample Python script to generate the pristine data from the original sources. Please note that metadata may vary across different sources, which may require minor adjustments to the code for full compatibility.</p>
+        <p>We have provided a <a href="https://drive.google.com/file/d/1qd7eKPfYItug0KSCwwG6zXfgmB7wOkz7/view?usp=sharing">sample Python script</a> to generate the pristine data from the original sources. Please note that metadata may vary across different sources, which may require minor adjustments to the code for full compatibility.</p>
+
+        <p>
+          Note: If you use this dataset in your research, please cite our paper.
+        </p>
       </div>
+
     </div>
 
     <p><br /></p>

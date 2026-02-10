@@ -149,7 +149,7 @@
       <h3 class="card-title"><b>Download</b></h3>
       <hr>
       <div>
-        <p>(ver202601)</p>
+        <p>(ver202602)</p>
 
         <p>Download the JMDS-Open dataset <a href="https://zenodo.org/records/18322668">here</a>. Note that only generated data is available. [Zenodo link, zip 52.41 GB]</p>
 
@@ -175,6 +175,49 @@
          <li> language: ISO 639-3 language code (e.g., jpn, por, eng).</li>
          <li> dataset: Source dataset origin.</li>
         </ol>
+      </div>
+    </div>
+
+    <div class="card mt-3 p-3">
+      <h3 class="card-title"><b>Benchmark Model Configurations</b></h3>
+      <hr>
+      <div>
+        <p>We evaluate several state-of-the-art benchmark models in this study, including <b>CQT-ResNet</b>, <b>RawSpeech-AASIST</b>, and <b>XLSR-AASIST</b>.</p> 
+
+        <p>To support reproducibility, we have provided a comprehensive <a href="https://drive.google.com/drive/folders/14xwsiml2xu2-1VFLPkg8JofzuuQmsyaU?usp=sharing" class="font-weight-bold">set of configuration files</a> containing the hyperparameters and architectural settings used to generate the reported results.</p>
+      </div>
+    </div>
+
+
+
+    <div class="card mt-3 p-3">
+      <h3 class="card-title"><b>Evaluation Scripts</b></h3>
+      <hr>
+      <div>
+        <p>
+            To ensure transparency and reproducibility, we provide a <a href="https://drive.google.com/drive/folders/1AVcL2_4AY4cNMFEGgZgRpwiDemEJByUG?usp=sharing">standardized evaluation pipeline</a>. 
+            The scripts are designed to process a <code>.csv</code> output file containing predicted scores and ground-truth labels.
+        </p>
+
+        <div class="mb-4">
+            <h5 class="text-primary"><i class="fas fa-chart-line"></i> 1. Overall Performance Metrics</h5>
+            <p>The primary evaluation script calculates the following global metrics to assess the model's discriminative capabilities:</p>
+            <ul>
+                <li><strong>Accuracy:</strong> The percentage of correct predictions based on the optimized threshold.</li>
+                <li><strong>Equal Error Rate (EER):</strong> The benchmark metric for anti-spoofing, representing the point where False Acceptance and False Rejection rates are balanced.</li>
+                <li><strong>Area Under the Curve (AUC):</strong> Measures the model's ability to distinguish between classes across all decision thresholds.</li>
+                <li><strong>Minimum Detection Cost Function (minDCF):</strong> A weighted cost-based metric that accounts for specific error penalties in real-world scenarios.</li>
+            </ul>
+        </div>
+
+        <div class="mb-4">
+            <h5 class="text-primary"><i class="fas fa-language"></i> 2. Language-Specific Breakdown</h5>
+            <p>Given the multilingual nature of the <b>JMDS</b> dataset, the script automatically parses the results to provide a granular analysis per locale:</p>
+            <ul>
+                <li><strong>Intra-Language Performance:</strong> Individual EER and Accuracy reports for each specific language (e.g., Mandarin, Japanese, Thai).</li>
+                <li><strong>Macro-Averaged Metrics:</strong> We compute the <b>Macro-EER</b> and <b>Macro-Accuracy</b> across all languages to ensure that performance is not skewed by dominant high-resource languages like English.</li>
+            </ul>
+        </div>
       </div>
     </div>
 
